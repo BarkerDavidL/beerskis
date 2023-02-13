@@ -50,6 +50,10 @@ nav li {
     list-style: none;
 }
 
+nav li a {
+    text-decoration: none;
+}
+
 aside {
     background: #c0e0c0;
     float: left;

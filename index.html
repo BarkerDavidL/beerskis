@@ -6,34 +6,45 @@
         <meta name="description" content="Travel with skiing, snowboarding beer drinking and friends">
         <meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
         <link rel="stylesheet" href="./beerskis.css">
+        <script src="./themeset.js"></script>
     </head>
     <body>
-        <header>
+        <div class="flex-container">
+        <header class="flex-item">
             <h1>Beerskis Travel Inc.</h1>
             <a href="./temp.html">Temp</a>
         </header>
-        <main>
+        <main class="flex-item">
             <div id="content">
                 <h1>Welcome to Beerskis Travel!</h1>
             </div>
         </main>
-        <nav>
-            <p>Menu</p>
-            <ul>
-                <li><a href="./lodging.html">Lodging</a></li>
-                <li><a href="./beers.html">Brewpubs</a></li>
-                <li><a href="./packages.html">All-Inclusives</a></li>
-                <li><a href="./flights.html">Flights</a></li>
-            </ul>
+        <nav class="flex-item" class="menu-bar">
+            <p class="menu-header">Menu</p>
+            <div class="main-menu-parent">
+                <ul class="menu-parent">
+                    <li class="menu-item"><a href="./lodging.html">Lodging</a></li>
+                    <li class="menu-item"><a href="./beers.html">Brewpubs</a></li>
+                    <li class="menu-item"><a href="./packages.html">All-Inclusives</a></li>
+                    <li class="menu-item"><a href="./flights.html">Flights</a></li>
+                </ul>
+                <ul class="menu-parent">
+                    <li class="menu-item"><a href="./user.html">User Account</a></li>
+                    <li class="menu-item"><a href="./settings.html">Settings</a></li>
+                </ul>
+            </div>
         </nav>
-        <aside>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
+        <aside class="flex-item">
+            <p>Set Theme</p>
+            <ul id="themelist">
+                <li>Float</li>
+                <li>FlexBox</li>
+                <li>Grid</li>
             </ul>
         </aside>
-        <footer>
+        <footer class="flex-item">
             <p>Beerski Travel Inc. &#169;2023</p>
         </footer>
+        </div>
     </body>
 </html>
