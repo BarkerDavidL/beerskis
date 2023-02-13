@@ -1,4 +1,4 @@
-.flex-container {
+.body-container {
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
