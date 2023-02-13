@@ -1,0 +1,95 @@
+
+.menu-header {
+    display: none;
+}
+
+.main-menu-parent {
+    display: grid;
+    justify-content: space-between;
+}
+
+.menu-parent {
+    display: grid;
+    gap: 10px;
+}
+
+.menu-item {
+    background-color: antiquewhite;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #303030;
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content min-content 1fr min-content;
+}
+
+ul li {
+    padding: 0px 8px 0px 0px;
+    line-height: 1.5;
+}
+
+header {
+    grid-column: 1 / span 2;
+}
+
+header h1 {
+    background: #eeeeee;
+    color: #303030;
+}
+
+header a {
+    color: #3030c0;
+}
+
+nav {
+    grid-column: 1 / span 2;
+    background: #a0c0e0;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: .3em;
+}
+
+.main-menu-parent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+}
+
+.menu-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+aside {
+    grid-column 1;
+    background: #c0e0c0;
+}
+
+main {
+    grid-column: 2;
+}
+
+footer {
+    grid-column: 1 / span 2;
+    background: #ff5050;
+    color: #eeeeee;
+}
