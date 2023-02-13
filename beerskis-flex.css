@@ -20,7 +20,7 @@
     gap: 10px;
 }
 
-.menu-item {
+.menu-parent li {
     background-color: antiquewhite;
 }
 

@@ -13,7 +13,7 @@
     gap: 10px;
 }
 
-.menu-item {
+.menu-parent li {
     background-color: antiquewhite;
 }
 
@@ -66,13 +66,13 @@ nav ul {
 
 .main-menu-parent {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: [first] auto [line2] 30%;
     justify-content: space-between;
 }
 
 .menu-parent {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
 }
 
 nav li a {
