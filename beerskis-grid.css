@@ -117,6 +117,7 @@ footer {
     
     .menu_icon {
         display: inline;
+        width: 24px;
     }
     
 }
