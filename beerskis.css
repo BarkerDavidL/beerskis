@@ -21,6 +21,7 @@ ul li {
 
 header {
     position: relative;
+    background: #eeeeee;
 }
 
 header h1 {
@@ -28,7 +29,6 @@ header h1 {
     line-height: 80px;
     margin: 0;
     padding-left: 10px;
-    background: #eeeeee;
     color: #303030;
 }
 
