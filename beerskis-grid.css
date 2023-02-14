@@ -31,8 +31,13 @@ body {
 
 .body-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: min-content min-content 1fr min-content;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar . main main"
+      "footer footer footer footer";
 }
 
 ul li {
@@ -41,11 +46,13 @@ ul li {
 }
 
 header {
-    grid-column: 1 / span 2;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #eeeeee;
 }
 
 header h1 {
-    background: #eeeeee;
     color: #303030;
 }
 
@@ -54,7 +61,7 @@ header a {
 }
 
 nav {
-    grid-column: 1 / span 2;
+    grid-area: nav;
     background: #a0c0e0;
 }
 
@@ -80,16 +87,16 @@ nav li a {
 }
 
 aside {
-    grid-column 1;
+    grid-area sidebar;
     background: #c0e0c0;
 }
 
 main {
-    grid-column: 2;
+    grid-area: main;
 }
 
 footer {
-    grid-column: 1 / span 2;
+    grid-area: footer;
     background: #ff5050;
     color: #eeeeee;
 }
