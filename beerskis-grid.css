@@ -1,4 +1,8 @@
 
+* {
+    box-sizing: border-box;
+}
+
 .menu-header {
     display: none;
 }
@@ -39,6 +43,7 @@ body {
       "sidebar . main main"
       "footer footer footer footer";
 }
+
 
 ul li {
     padding: 0px 8px 0px 0px;
@@ -99,4 +104,10 @@ footer {
     grid-area: footer;
     background: #ff5050;
     color: #eeeeee;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-menu-parent {
+        display: block;
+    }
 }
