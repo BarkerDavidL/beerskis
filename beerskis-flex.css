@@ -8,6 +8,14 @@
     display: none;
 }
 
+.menu_title {
+    display: inline;
+}
+
+.menu_icon {
+    display: none;
+}
+
 .main-menu-parent {
     display: flex;
     flex-flow: row wrap;

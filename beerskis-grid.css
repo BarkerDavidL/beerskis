@@ -87,6 +87,14 @@ nav ul {
     grid-template-columns: auto auto auto auto;
 }
 
+.menu_title {
+    display: inline;
+}
+
+.menu_icon {
+    display: none;
+}
+
 nav li a {
     text-decoration: none;
 }
@@ -107,7 +115,12 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    .main-menu-parent {
-        display: block;
+    .menu_title {
+        display: none;
     }
+    
+    .menu_icon {
+        display: inline;
+    }
+    
 }

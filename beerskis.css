@@ -52,6 +52,14 @@ nav {
     display: inline;
 }
 
+.menu_title {
+    display: inline;
+}
+
+.menu_icon {
+    display: none;
+}
+
 nav li {
     display: inline;
     list-style: none;
