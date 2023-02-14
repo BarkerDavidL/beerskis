@@ -40,13 +40,18 @@ ul li {
     padding: 0px 8px 0px 0px;
     line-height: 1.5;
 }
-
-header h1 {
+header {
+    display: flex;
+    justify-content: space-between;
     background: #eeeeee;
+}
+header h1 {
     color: #303030;
 }
 
 header a {
+    align-self: center;
+    padding: 0px 10px;
     color: #3030c0;
 }
 
