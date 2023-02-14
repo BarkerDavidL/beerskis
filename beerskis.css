@@ -42,11 +42,18 @@ header a {
 
 nav {
     background: #a0c0e0;
-    float: left;
-    width: 200px;
+}
+
+.menu-header {
+    display: none;
+}
+
+.main-menu-parent ul {
+    display: inline;
 }
 
 nav li {
+    display: inline;
     list-style: none;
 }
 
