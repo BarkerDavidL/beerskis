@@ -95,6 +95,10 @@ nav li a {
     text-decoration: none;
 }
 
+nav li a:hover {
+    background: beige;
+}
+
 aside {
     grid-area sidebar;
     background: #c0e0c0;
