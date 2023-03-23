@@ -25,3 +25,10 @@ window.onload = () => {
     console.log("Window has loaded");
     setThemeOnClick();
 }
+   
+function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
