@@ -1,41 +1,54 @@
+:root {
+    --color-bg: #214939;
+    --color-text-main: rgb(224, 217, 217);
+    --color-primary: #FFFF00;
+    --wrapper-height: 87vh;
+    --image-max-width: 300px;
+    --image-margin: 3rem;
+    --font-family: "Arial";
+    --font-family-header:"Arial" ;
+  }
+* {
+    box-sizing: border-box;
+}
+
+.menu-header {
+    display: none;
+}
+
+.main-menu-parent {
+    display: grid;
+    justify-content: space-between;
+}
+
+.menu-parent {
+    display: grid;
+    gap: 10px;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
-.imageDiv {
-   /* width: 500px; */
-    height: 100px;
-    display: block;
-    position:relative;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-  } 
-
-  .imageDiv::before {
-    content: "This is content";
-    background: url("images/a_Sunset_Flowers.JPG");
-    background-size:100% 100%;
-    opacity: 0.5;
-    left:0;
-    top:0;
-    bottom:0;
-    right:0;
-    position: absolute;
-    z-index:-1;
-  }
 body {
     color: #303030;
     font-family: Arial, sans-serif;
     font-size: 90%;
     font-weight: normal;
 }
-p {
-    padding: 0px 8px 0px 8px;
-    line-height: 2;
+
+.body-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "nav nav nav nav"
+      "sidebar . main main"
+      "footer footer footer footer";
 }
+
 
 ul li {
     padding: 0px 8px 0px 0px;
@@ -43,81 +56,40 @@ ul li {
 }
 
 header {
-    position: relative;
-   /*
-    background: #eeeeee;  
-    background-image: url("images/a_Sunset_Flowers.JPG");
-    background-size:cover;
-    */
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #eeeeee;
 }
 
 header h1 {
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    padding-left: 10px;
-    color: Blue;
+    color: #303030;
 }
 
 header a {
-    position: absolute;
-    right: 0;
-    top: 23px;
-    padding: 10px;
     color: #3030c0;
 }
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #4110f1;
-    display: block;
-    transition: 10.1s;
-  }
-  
-  .sidenav a:hover {
-    color: #11f568;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  #main {
-    transition: margin-left .5s;
-    padding: 16px;
-    background-color: blue;
-  }
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
 nav {
+    grid-area: nav;
     background: #a0c0e0;
 }
 
-.menu-header {
-    display: none;
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin: .3em;
 }
 
-.main-menu-parent ul {
-    display: inline;
+.main-menu-parent {
+    display: grid;
+    grid-template-columns: [first] auto [line2] 30%;
+    justify-content: space-between;
+}
+
+.menu-parent {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .menu_title {
@@ -128,44 +100,37 @@ nav {
     display: none;
 }
 
-nav li {
-    display: inline;
-    list-style: none;
-}
-
 nav li a {
     text-decoration: none;
 }
 
+nav li a:hover {
+    background: beige;
+}
+
 aside {
+    grid-area sidebar;
     background: #c0e0c0;
-    float: left;
-    clear: left;
-    width: 200px;
-}
-
-footer {
-    background: #ff5050;
-    color: #eeeeee;
-    clear: both;
-    width: 100%;
-}
-
-footer p {
-    padding: 10px 10px 10px 10px;
 }
 
 main {
-    float: right;
-    width: 100%;
-    margin-left: -200px;
-
+    grid-area: main;
 }
 
-div#content {
-    margin-left: 200px;
+footer {
+    grid-area: footer;
+    background: #ff5050;
+    color: #eeeeee;
 }
 
-div#content h1 {
-    padding: 0px 20px;
+@media only screen and (max-width: 600px) {
+    .menu_title {
+        display: none;
+    }
+    
+    .menu_icon {
+        display: inline;
+        width: 24px;
+    }
+    
 }
