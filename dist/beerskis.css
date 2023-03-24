@@ -105,11 +105,11 @@ header {
     grid-template-columns: auto auto;
     background: var(--header-bg-color);
     position: relative;
-    /*
+   
      background: #eeeeee;  
      background-image: url("images/a_Sunset_Flowers.JPG");
      background-size:cover;
-     */
+
 }
 
 header h1 {
