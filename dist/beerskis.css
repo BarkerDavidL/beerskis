@@ -21,14 +21,6 @@ html, body {
     --heading-font-color: #303030;
     --heading-link-color: #3080c0;
     --nav-hover-bg-color: #f5f5e0; /* beige */
-    --console-bg-color: #203030;
-    --editor-bg-color: #205060;
-    --darkbg-text-color: #eeeeee;
-    --error-bg-color: #cc2244;
-    --button-bg-color: #88aa99;
-    --button-text-color: #ffeeee;
-    --message-bg-color: #779988;
-    --message-text-color: #eeeeee;
 }
 
   .imageDiv {
