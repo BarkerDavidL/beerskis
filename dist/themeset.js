@@ -2,7 +2,7 @@ function themeSet(themeName) {
     let theme = document.getElementsByTagName('link')[0];
     theme.setAttribute('href', themeName);
 }
-alert("This is an alert")
+
 function setThemeOnClick() {
     let list = document.getElementById('themelist');
     let listItems = list.getElementsByTagName('li');
