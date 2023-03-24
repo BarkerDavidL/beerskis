@@ -1,42 +1,4 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-/* Our default values set as CSS variables */
-:root {
-    --color-bg: #214939;
-    --color-text-main: rgb(224, 217, 217);
-    --color-primary: #FFFF00;
-    --wrapper-height: 87vh;
-    --color-body:#303030;
-    --image-max-width: 300px;
-    --image-margin: 3rem;
-    --font-family: "Arial";
-    --font-family-header:"Arial" ;
-  }
-  .imageDiv {
-    /* width: 500px; */
-     height: 100px;
-     display: block;
-     position:relative;
-     left:0;
-     top:0;
-     bottom:0;
-     right:0;
-   } 
- 
-   .imageDiv::before {
-     content: "This is content";
-     background: url("images/a_Sunset_Flowers.JPG");
-     background-size:100% 100%;
-     opacity: 0.5;
-     left:0;
-     top:0;
-     bottom:0;
-     right:0;
-     position: absolute;
-     z-index:-1;
-   }
+
 * {
     box-sizing: border-box;
 }
@@ -60,16 +22,36 @@ html, body {
     padding: 0;
 }
 
+.imageDiv {
+   /* width: 500px; */
+    height: 100px;
+    display: block;
+    position:relative;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+  } 
+
+  .imageDiv::before {
+    content: "This is content";
+    background: url("images/a_Sunset_Flowers.JPG");
+    background-size:100% 100%;
+    opacity: 0.5;
+    left:0;
+    top:0;
+    bottom:0;
+    right:0;
+    position: absolute;
+    z-index:-1;
+  }
 body {
     color: var(--color-body);
     font-family: Arial, sans-serif;
     font-size: 90%;
     font-weight: normal;
 }
-p {
-    padding: 0px 8px 0px 8px;
-    line-height: 2;
-}
+
 .body-container {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -81,38 +63,25 @@ p {
       "footer footer footer footer";
 }
 
-
 ul li {
     padding: 0px 8px 0px 0px;
     line-height: 1.5;
 }
 
 header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: auto auto;
-    background: #eeeeee;
     position: relative;
-    /*
-     background: #eeeeee;  
-     background-image: url("images/a_Sunset_Flowers.JPG");
-     background-size:cover;
-     */
+   /*
+    background: #eeeeee;  
+    background-image: url("images/a_Sunset_Flowers.JPG");
+    background-size:cover;
+    */
 }
 
 header h1 {
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    padding-left: 10px;
-    color: Blue;
+    color: #303030;
 }
 
 header a {
-    position: absolute;
-    right: 0;
-    top: 23px;
-    padding: 10px;
     color: #3030c0;
 }
 .sidenav {
@@ -147,6 +116,15 @@ header a {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    background-color: blue;
+  }
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
 nav {
     grid-area: nav;
@@ -189,9 +167,10 @@ nav li a:hover {
 aside {
     grid-area sidebar;
     background: #c0e0c0;
-    float: left;
-    clear: left;
-    width: 200px;
+}
+
+main {
+    grid-area: main;
 }
 
 main {
@@ -212,24 +191,22 @@ footer {
     background: #ff5050;
     color: #eeeeee;
 }
+
 footer p {
     padding: 10px 10px 10px 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .menu_title {
-        display: none;
-    }
-    
-    .menu_icon {
-        display: inline;
-        width: 24px;
-    }
-    div#content {
-        margin-left: 200px;
-    }
-    
-    div#content h1 {
-        padding: 0px 20px;
-    }
+main {
+    float: right;
+    width: 100%;
+    margin-left: -200px;
+
+}
+
+div#content {
+    margin-left: 200px;
+}
+
+div#content h1 {
+    padding: 0px 20px;
 }
