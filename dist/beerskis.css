@@ -13,7 +13,24 @@ html, body {
     --image-margin: 3rem;
     --font-family: "Arial";
     --font-family-header:"Arial" ;
-  }
+    /* Color Palette */
+    --header-bg-color: #ccbb44;
+    --nav-bg-color: #aaddcc;
+    --aside-bg-color: #c0e0c0;
+    --footer-bg-color: #bbaa55;
+    --heading-font-color: #303030;
+    --heading-link-color: #3080c0;
+    --nav-hover-bg-color: #f5f5e0; /* beige */
+    --console-bg-color: #203030;
+    --editor-bg-color: #205060;
+    --darkbg-text-color: #eeeeee;
+    --error-bg-color: #cc2244;
+    --button-bg-color: #88aa99;
+    --button-text-color: #ffeeee;
+    --message-bg-color: #779988;
+    --message-text-color: #eeeeee;
+}
+
   .imageDiv {
     /* width: 500px; */
      height: 100px;
@@ -91,7 +108,7 @@ header {
     grid-area: header;
     display: grid;
     grid-template-columns: auto auto;
-    background: #eeeeee;
+    background: var(--header-bg-color);
     position: relative;
     /*
      background: #eeeeee;  
