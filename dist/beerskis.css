@@ -13,6 +13,7 @@ html, body {
     --image-margin: 3rem;
     --font-family: "Arial";
     --font-family-header:"Arial" ;
+    background-color: var(--color-primary);
     /* Color Palette */
     --header-bg-color: #ccbb44;
     --nav-bg-color: #aaddcc;
@@ -74,7 +75,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 90%;
     font-weight: normal;
-    background-color: var(--color-primary);
+   /* background-color: var(--color-primary);  */
 
 }
 p {
