@@ -2,7 +2,7 @@
 :root {
     --color-bg: #214939;
     --color-text-main: rgb(224, 217, 217);
-    --color-primary: #FFFF00;
+    --color-primary: #cccccc;
     --wrapper-height: 87vh;
     --color-body:#303030;
     --image-max-width: 300px;
@@ -35,8 +35,6 @@ body {
     font-family: Arial, sans-serif;
     font-size: 90%;
     font-weight: normal;
-   /* background-color: var(--color-primary);  */
-
 }
 
 .body-container {
