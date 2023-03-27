@@ -128,11 +128,8 @@ nav li a:hover {
 main {
     grid-area: main;
     transition: margin-left .5s;
-    padding: 16px;
+    padding: 100px 16px 16px 16px;
     background-color: blue;
-    /*float: right;
-    width: 100%;
-    margin-left: -200px;*/
 }
 
 footer {
