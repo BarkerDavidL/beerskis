@@ -1,12 +1,8 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
 /* Our default values set as CSS variables */
 :root {
     --color-bg: #214939;
     --color-text-main: rgb(224, 217, 217);
-    --color-primary: #FFFF00;
+    --color-primary: #cccccc;
     --wrapper-height: 87vh;
     --color-body:#303030;
     --image-max-width: 300px;
@@ -19,12 +15,60 @@ html, body {
     --nav-bg-color: #aaddcc;
     --aside-bg-color: #c0e0c0;
     --footer-bg-color: #bbaa55;
-    --heading-font-color: #303030;
+    --heading-font-color: #eeeeee;
     --heading-link-color: #3080c0;
     --nav-hover-bg-color: #f5f5e0; /* beige */
 }
 
-  .imageDiv {
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: var(--aside-bg-color);
+    font-family: Arial, sans-serif;
+    font-size: 90%;
+    font-weight: normal;
+}
+
+.body-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "header header header header"
+      "main main main main"
+      "footer footer footer footer";
+}
+
+p {
+    padding: 0px 8px 0px 8px;
+    line-height: 2;
+}
+
+ul li {
+    padding: 0px 8px 0px 0px;
+    line-height: 1.5;
+}
+
+header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background: var(--header-bg-color);
+    position: relative;   
+    background: #eeeeee;  
+    background-image: url("images/a_Sunset_Flowers.JPG");
+    background-size:cover;
+}
+
+.imageDiv {
     /* width: 500px; */
      height: 100px;
      display: block;
@@ -33,9 +77,9 @@ html, body {
      top:0;
      bottom:0;
      right:0;
-   } 
+} 
  
-   .imageDiv::before {
+.imageDiv::before {
      content: "This is content";
      background: url("images/a_Sunset_Flowers.JPG");
      background-size:100% 100%;
@@ -46,87 +90,22 @@ html, body {
      right:0;
      position: absolute;
      z-index:-1;
-   }
-* {
-    box-sizing: border-box;
 }
 
-.menu-header {
-    display: none;
+header span {
+    padding: 30px;
+    font-size: 20px;
+    cursor:pointer; 
 }
-
-.main-menu-parent {
-    display: grid;
-    justify-content: space-between;
-}
-
-.menu-parent {
-    display: grid;
-    gap: 10px;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    color: var(--aside-bg-color);
-    font-family: Arial, sans-serif;
-    font-size: 90%;
-    font-weight: normal;
-   /* background-color: var(--color-primary);  */
-
-}
-p {
-    padding: 0px 8px 0px 8px;
-    line-height: 2;
-}
-.body-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "header header header header"
-      "nav nav nav nav"
-      "sidebar . main main"
-      "footer footer footer footer";
-}
-
-
-ul li {
-    padding: 0px 8px 0px 0px;
-    line-height: 1.5;
-}
-
-header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: auto auto;
-    background: var(--header-bg-color);
-    position: relative;
-   
-     background: #eeeeee;  
-     background-image: url("images/a_Sunset_Flowers.JPG");
-     background-size:cover;
-
-}
-
 header h1 {
-    height: 80px;
-    line-height: 80px;
-    margin: 0;
-    padding-left: 10px;
     color: var(--heading-font-color);
 }
 
 header a {
-    position: absolute;
-    right: 0;
-    top: 23px;
-    padding: 10px;
+    padding: 30px;
     color: var(--heading-link-color);
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -138,72 +117,31 @@ header a {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-  }
+}
   
-  .sidenav a {
+.sidenav a, .sidenav span {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #4110f1;
     display: block;
     transition: 10.1s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #11f568;
-  }
+}
   
-  .sidenav .closebtn {
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-nav {
-    grid-area: nav;
-    background: #a0c0e0;
-}
-
-nav ul {
-    list-style: none;
-    padding-left: 0;
-    margin: .3em;
-}
-
-.main-menu-parent {
-    display: grid;
-    grid-template-columns: [first] auto [line2] 30%;
-    justify-content: space-between;
-}
-
-.menu-parent {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-
-.menu_title {
-    display: inline;
-}
-
-.menu_icon {
-    display: none;
-}
-
-nav li a {
-    text-decoration: none;
 }
 
 nav li a:hover {
     background: beige;
-}
-
-aside {
-    grid-area: sidebar;
-    background: #c0e0c0;
-    float: left;
-    clear: left;
-    width: 200px;
 }
 
 main {
@@ -211,14 +149,11 @@ main {
     transition: margin-left .5s;
     padding: 16px;
     background-color: blue;
-    float: right;
+    /*float: right;
     width: 100%;
-    margin-left: -200px;
+    margin-left: -200px;*/
 }
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+
 footer {
     grid-area: footer;
     background: #ff5050;
@@ -226,6 +161,11 @@ footer {
 }
 footer p {
     padding: 10px 10px 10px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 @media only screen and (max-width: 600px) {
