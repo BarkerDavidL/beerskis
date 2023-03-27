@@ -139,33 +139,9 @@ header a {
     font-size: 36px;
     margin-left: 50px;
 }
-/* nav still used in child pages, to be removed */
-nav {
-    grid-area: nav;
-    background: #a0c0e0;
-}
-
-nav ul {
-    list-style: none;
-    padding-left: 0;
-    margin: .3em;
-}
-
-nav li a {
-    text-decoration: none;
-}
 
 nav li a:hover {
     background: beige;
-}
-
-/* aside is still used in child pages */
-aside {
-    grid-area: sidebar;
-    background: #c0e0c0;
-    float: left;
-    clear: left;
-    width: 200px;
 }
 
 main {
