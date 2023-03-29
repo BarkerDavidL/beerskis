@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-    color: var(--color-body);
+    color: var(--aside-bg-color);
     font-family: Arial, sans-serif;
     font-size: 90%;
     font-weight: normal;
@@ -58,27 +58,15 @@ header {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     background: var(--header-bg-color);
-    position: relative;   
     background: #eeeeee;  
     background-image: url("images/a_Sunset_Flowers.JPG");
     background-size:cover;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.imageDiv {
-    /* width: 500px; */
-     height: 100px;
-     display: block;
-     position:relative;
-     left:0;
-     top:0;
-     bottom:0;
-     right:0;
-} 
- 
-.imageDiv::before {
-     content: "This is content";
-     background: url("images/a_Sunset_Flowers.JPG");
-     background-size:100% 100%;
+header::before {
      opacity: 0.5;
      position: absolute;
      z-index:-1;
