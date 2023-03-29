@@ -14,7 +14,7 @@
           margin: 0;
           font-family: Arial, Helvetica, sans-serif;
         }
-        Header{
+        header{
              background-color: red;
             }
          .imageDiv{
@@ -48,7 +48,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ab8bca;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -93,15 +93,15 @@
         </style>
     </head>
     <body>
-        <div class="header" id="myHeader">
-           
+        <header>
+          
             <div  class="imageDiv" id="myImageDiv">   
                 <h1>Beerskis Travel Incorp</h1>
                 <a href="#">About</a>
                 <a href="#">"Sign In"</a>
                 <a href="#">SampleCode</a>
                 <a href="#">Chat</a>
-                <a href="javascript:void(0);" class="icon" onclick="myResponsive()">
+                <a href="javascript:void(0);" class="icon" onclick="myResponsive()">Sticky</a>
                 <div id="mySidenav" class="sidenav">  
                     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <a href="#">About</a>
@@ -109,7 +109,8 @@
                     <a href="#">Clients</a>
                     <a href="#">Contact</a>
                 </div> 
-            </div>      
+            </div>   
+          </header>   
              
             <div class="content">
                 <h2>Beer Content</h2>
@@ -141,11 +142,13 @@
             
         <footer>
             <p>&#169;2023</p>
+            flex-grow: 0;  <!-- Sticky Footer-->
+            flex-shrink: 0;
         </footer>
 
         <script>
             window.onscroll = function() {myFunction()};
-            var header = document.getElementById("myImageDiv");
+            var header = document.getElementsByTagName("header")[0];
             var sticky = header.offsetTop;
              function myFunction() {
               if (window.pageYOffset > sticky) {
@@ -157,6 +160,7 @@
     /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav  */  
       function myResponsive() {
   var x = document.getElementById("myTopnav");
+  console.log("x is :" +x);
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
