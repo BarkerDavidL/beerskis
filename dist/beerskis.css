@@ -20,9 +20,6 @@
     --nav-hover-bg-color: #f5f5e0; /* beige */
 }
 
-* {
-    box-sizing: border-box;
-}
 
 html, body {
     margin: 0;
@@ -75,6 +72,7 @@ header::before {
 header span {
     padding: 30px;
     font-size: 20px;
+    box-sizing:border-box;
     cursor: pointer; 
 }
 
@@ -94,9 +92,9 @@ header a {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--header-bg-color);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.1s;
     padding-top: 60px;
 }
   
@@ -106,11 +104,13 @@ header a {
     font-size: 25px;
     color: #4110f1;
     display: block;
-    transition: 10.1s;
+    transition: 0.1s;
+    
 }
 
 .sidenav a:hover {
-    color: #11f568;
+    color: var(--nav-hover-bg-color);
+    background-color: red;
 }
   
 .sidenav .closebtn {

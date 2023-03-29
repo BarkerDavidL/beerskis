@@ -30,7 +30,7 @@
         .content {
           padding: 16px;
         }
-        
+        p {color: black}
         .sticky {
           position: fixed;
           top: 0;
@@ -93,9 +93,7 @@
         </style>
     </head>
     <body>
-        <header>
-          
-            <div  class="imageDiv" id="myImageDiv">   
+        <header class="imageDiv">   
                 <h1>Beerskis Travel Incorp</h1>
                 <a href="#">About</a>
                 <a href="#">"Sign In"</a>
@@ -109,7 +107,6 @@
                     <a href="#">Clients</a>
                     <a href="#">Contact</a>
                 </div> 
-            </div>   
           </header>   
              
             <div class="content">
@@ -146,7 +143,7 @@
             flex-shrink: 0;
         </footer>
 
-        <script>
+      <script>
             window.onscroll = function() {myFunction()};
             var header = document.getElementsByTagName("header")[0];
             var sticky = header.offsetTop;
@@ -163,10 +160,10 @@
   console.log("x is :" +x);
   if (x.className === "topnav") {
     x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-            </script>
+          } else {  
+            x.className = "topnav";
+                  }
+                                  }
+       </script>
      </body>
 </html>
