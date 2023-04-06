@@ -64,13 +64,16 @@ figure img {
 
 .two-col-grid {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 }
 
+.two-col-grid img {
+    max-width: 400px;
+}
 header {
     grid-area: header;
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 6fr 1fr;
     background: var(--header-bg-color);
     color: var(--heading-font-color);
     background-image: url("images/a_Sunset_Flowers.JPG");
@@ -136,6 +139,15 @@ header a {
 
 nav li a:hover {
     background: beige;
+}
+
+.breadcrumbs {
+    font-size: 100%;
+    padding: 0;
+}
+
+.breadcrumbs a {
+    padding: 0;
 }
 
 main {
