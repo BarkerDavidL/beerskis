@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      .polaroid a {
+        background: red;
+        display: inline-block;
+        margin: 55px 75px 30px;
+        padding: 15px 15px 30px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+        transition: all .20s linear;
+        z-index: 0;
+        position: relative;
+      }
+      .polaroid a:after {
+        color: #333;
+        font-size: 25px;
+        content: attr(title);
+        position: relative;
+        top: 15px;
+      }
+      .polaroid img {
+        display: block;
+        width: 250px;
+      }
+      .polaroid a:hover {
+        transform: scale(1.2);
+        z-index: 10;
+        /* Don't need the prefix webkit or moz.. deprecated 
+        -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+        -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);  */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+       /* Rotate Transform for image */
+        float: left;
+        transform: rotate(7deg);
+      }
+
+    </style>
+  </head>
+  <body>
+    /* https://www.w3docs.com/tools/code-editor/6619  */
+    <div class="polaroid">
+      <a href="#" title="Santorini">
+        <img height="250" src="../images/a_Sunset_Flowers.JPG" alt="Santorini" title="Santorini" />
+      </a>
+    </div>
+  </body>
+</html>
