@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 1050px;
+  /* Responsive Image */
+  max-width: 100%;
+  height: auto;
+}
+/* border shadow on hover */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.2);
+}
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+figcaption {
+  background-color: black;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+  /* Polaroid style images */
+div.polaroid {
+width:80%;
+background-color:red;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 25px;   
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Thumbnail Image as Link</h2>
+
+<p>Use the border property to create thumbnail images. 
+    Wrap an anchor around the image to use it as a link.</p>
+
+<a target="_blank" href="../images/a_Sunset_Flowers.JPG">
+  <img src="../images/a_Sunset_Flowers.JPG" alt="Flowers" style:"width:150px">
+</a>
+<p>Responsive Image. Use a different ID for image</p>
+<img src="../images/a_Sunset_Flowers.JPG" alt="Flowers" width:"1000" height="300">
+<caption "Responsive"></caption>
+
+<figure>
+  <img src="../images/a_Sunset_Flowers.JPG" alt="Trulli" style:"width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+</figure>
+
+<h2>Responsive Polaroid Images</h2>
+<div class="polaroid">
+    <img src="../images/a_Sunset_Flowers.JPG" alt="Norther Lights" style="width:100%"/>
+  <div class="container">
+    <p>Northern Lights</p>
+  </div>
+</div>
+
+</body>
+</html>
