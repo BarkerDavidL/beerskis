@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>D and T Excellent Adventures</title>
+        <meta name="author" content="Beerskis Travel Inc.">
+        <meta name="description" content="Travel with skiing, snowboarding beer drinking and friends">
+        <meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../beerskis.css">
+        <script src="../themeset.js"></script>
+        <style>
+            #mapsection {
+              width: 50%;
+              height: auto;
+              fill: #ccc;
+              stroke: #333;
+              stroke-width: 2;
+            }
+            #malic {
+              fill: brown;
+            }
+      
+            #Benin {
+              /* fill: url("maps/Flag_of_Benin.svg"); */
+              fill: #00baba;
+            }
+      
+            #Nigeria {
+              fill: yellow;
+            }
+      
+            #Zimbabwe {
+              fill: brown;
+            }
+      
+            #Zambia {
+              fill: green;
+            }
+      
+            #Somalia {
+              fill: darkseagreen;
+            }
+      
+            #Mali {
+              fill: gray;
+            }
+      
+            path {
+              fill: #1da1f2;
+            }
+            path:hover {
+              fill: purple;
+              stroke: red;
+              stroke-width: 3px;
+              transition: fill 0.4s;
+            }
+          </style>
+    </head>
+    <body>
+
+        <header>
+                
+            <span onclick="openNav()">&#9776;</span>
+
+            <h1>Dave and Tim Adventures</h1>
+           
+            <a href="../pages/temp.html">About</a>
+            
+        </header>
+
+        <div class="sidenav">
+            <span class="closebtn" onclick="closeNav()">&times;</span>
+            <a href="../pages/lodging.html">Lodging</a>
+            <a href="../pages/beers.html">Brewpubs</a>
+            <a href="../pages/packages.html">All-Inclusives</a>
+            <a href="../pages/flights.html">Flights</a>
+         </div>
+
+        <main>
+            <div id="content">
+                <h1>Beerski Trips by Year</h1>
+                <div class="two-col-grid">
+                    <p>Travel is different things to different people. For some,
+                        it's a break from the everyday routine. For others, it's
+                        a chance to expand your vision of the possible. And for
+                        others, it's an opportunity to meet new people with unique
+                        life stories to share.
+                    </p>
+                    <img src="../images/city.jpeg" alt="Meeting People"/>
+                </div>
+                <a xlink:title="Mali" xlink:href="https://en.wikipedia.org/wiki/Mali" target="_blank" id="malic">
+                    <path
+                          inkscape:connector-curvature="0"
+                          d="..."
+                          id="Mali"
+                          />
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>Beerski Travel Inc. &#169;2023</p>
+        </footer>
+
+    </body>
+</html>
