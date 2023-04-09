@@ -492,8 +492,8 @@ var simplemaps_usmap_mapdata={
     },
     "harmans": {
       name: "Harmon's",
-      lat: 30,
-      lng: -80,
+      lat: 38.8,
+      lng: -79.7,
       color: "default",
       type: "circle",
       url: "../pages/wvharmans.html",
