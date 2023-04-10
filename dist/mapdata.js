@@ -490,13 +490,15 @@ var simplemaps_usmap_mapdata={
       color: "default",
       type: "image",
       image_url: "../images/snowflake.png",
+      url: "../pages/skipowderhorn.html",
     },
     "harmans": {
       name: "Harmon's North Fork Cottages",
       lat: 38.8,
       lng: -79.7,
       color: "default",
-      type: "circle",
+      type: "image",
+      image_url: "../images/cabin.png",
       url: "../pages/wvharmans.html",
     },
     "7springs": {
