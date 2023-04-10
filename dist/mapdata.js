@@ -473,18 +473,19 @@ var simplemaps_usmap_mapdata={
     }
   },
   locations: {
-    "nync": {
-      name: "New York",
-      lat: 40.71,
-      lng: -74,
-      description: "default",
+    "heavenly": {
+      name: "Heavenly Ski Resort",
+      description: "Ski resort on the south side of Lake Tahoe",
+      lat: 38.93,
+      lng: -119.94,
       color: "default",
-      url: "default",
-      type: "default",
-      size: "default"
+      type: "image",
+      image_url: "../images/snowflake.png",
+      url: "../pages/skiheavenly.html",
     },
     "powderhorn": {
       name: "Powderhorn Mountain Resort",
+      description: "Ski resort on the north slope of Colorado's Grand Mesa",
       lat: 38.27,
       lng: -107.09,
       color: "default",
@@ -494,6 +495,7 @@ var simplemaps_usmap_mapdata={
     },
     "harmans": {
       name: "Harmon's North Fork Cottages",
+      description: "Luxury accomodations at the source of the Potomac River in West Virginia",
       lat: 38.8,
       lng: -79.7,
       color: "default",
@@ -503,6 +505,7 @@ var simplemaps_usmap_mapdata={
     },
     "7springs": {
       name: "Seven Springs Mountain Resort",
+      description: "A year-round resort with winter skiing and summer hiking/biking in the Laurel Mountains",
       lat: 40.3,
       lng: -78.5,
       color: "default",
