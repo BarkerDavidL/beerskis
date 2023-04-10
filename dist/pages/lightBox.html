@@ -2,19 +2,8 @@
 <html>
 <head>
 <style>
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
-  /* Responsive Image */
-  max-width: 100%;
-  height: auto;
-}
-/* border shadow on hover */
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.2);
-}
+
+
 figure {
   border: 1px #cccccc solid;
   padding: 4px;
@@ -28,45 +17,99 @@ figcaption {
   text-align: center;
 }
   /* Polaroid style images */
-div.polaroid {
-width:80%;
-background-color:red;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.polaroid {
+width:100%;
+background-color: #cccccc;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(187, 80, 80, 0.19);
 margin-bottom: 25px;   
+float:left;
+width: 250px;
+margin: 15px;
 }
-
+/* border shadow on hover */
+.polaroid:hover {
+  box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
+  border: 1px solid #777;
+}
+.polaroid img {
+  border: 15px solid #ddd;
+  border-radius: 20px;
+  padding: 5px;
+  /* Responsive Image */
+  width: 100%;
+  height: auto;
+}
 .container {
   text-align: center;
   padding: 10px 20px;
+  width:100%;
 }
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 280px;
+  height: 280px;
+}
+
+.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
+}
+.imageDiv {
+    height: 230px;
+    background: red;
+    display:table;
+}
+.imageDiv img {
+  width: 100%;
+  max-height: 200px;
+   
+
+
+
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  height: 50px;
+}
+
 </style>
 </head>
 <body>
 
-<h2>Thumbnail Image as Link</h2>
+<h2>West Virginia Cabin Trips</h2>
+<p>Welcome to the Photo Gallery of the our West Virginia Trips</p>
+<div class="gallery">
 
-<p>Use the border property to create thumbnail images. 
-    Wrap an anchor around the image to use it as a link.</p>
+     <a target="_blank" href="https://photos.app.goo.gl/6wtbWooWFztkNfn97">
+        <div class="imageDiv">
+            <img src="../images/wvCabins2022.JPG" alt="Group" >
+        </div>
+        <div class="desc">
+         <p>2022 West Virginia Cabins</p>
+       </div>
+      </a>
+</div>
 
-<a target="_blank" href="../pages/lodging.html">
-  <img src="../images/wvCabins2022.JPG" alt="Group" style:"width:150px">
-</a>
-<p>Responsive Image. Use a different ID for image</p>
-<img src="../images/a_Sunset_Flowers.JPG" alt="Flowers" width:"1000" height="300">
-<caption "Responsive"></caption>
+<div class="gallery">
+
+    <a target="_blank" href="https://photos.google.com/share/AF1QipOtuuiOly1Ez7035e1xYL8TR9il-pPtwwznIxt2PEjqk9ucUmZ_QmZNnCMPxPGs1w">
+        <div class="imageDiv">
+            <img src="../images/2021_Goup.JPG" alt="Group">
+        </div>
+        <div class="desc">
+       <p>2022 West Virginia Cabins</p>
+     </div>
+    </a>
+   </div>
 
 <figure>
   <img src="../images/wvCabins2022.JPG" alt="Trulli" style:"width:100%">
   <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
 </figure>
-
-<h2>Responsive Polaroid Images</h2>
-<div class="polaroid">
-    <img src="../images/a_Sunset_Flowers.JPG" alt="Norther Lights" style="width:100%"/>
-  <div class="container">
-    <p>Northern Lights</p>
-  </div>
-</div>
 
 </body>
 </html>
