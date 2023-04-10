@@ -67,8 +67,9 @@ figure img {
     grid-template-columns: 1fr 1fr;
 }
 
-.two-col-grid img {
+.two-col-grid img, object {
     max-width: 400px;
+    background-color: lightskyblue;
 }
 header {
     grid-area: header;

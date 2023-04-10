@@ -2,12 +2,16 @@
 <html lang="en">
     <head>
         <title>Beerskis Travel Inc.</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
         <meta name="author" content="Beerskis Travel Inc.">
         <meta name="description" content="Travel with skiing, snowboarding beer drinking and friends">
         <meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
         <link rel="stylesheet" href="../beerskis.css">
         <script src="../themeset.js"></script>
-    </head>
+        <script src="../mapdata.js"></script>
+        <script src="../usmap.js"></script>
+        </head>
     <body class="body-container">
         <header>
             <span onclick="openNav()">&#9776;</span>
@@ -32,7 +36,12 @@
         <main>
             <div id="content">
                 <h1>Lodging</h1>
-                <p>Describe some lodging</p>
+                <div class="two-col-grid">
+                    <p>Use the map on the left to browse some of the vacation
+                       resorts we have collected on this site.  These include
+                       ski areas, nature retreats and other types of destinations.</p>
+                    <div id="usmapdiv"></div>
+                </div>
             </div>
         </main>
 
