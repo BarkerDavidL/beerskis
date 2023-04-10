@@ -59,17 +59,22 @@ margin: 15px;
 .imageDiv {
     height: 230px;
     background: red;
-    display:table;
+    position:relative;
 }
 .imageDiv img {
   width: 100%;
   max-height: 200px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .desc {
   padding: 15px;
   text-align: center;
-  vertical-align: top;
+  text-align: top;
   height: 50px;
 }
 
