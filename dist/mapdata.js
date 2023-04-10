@@ -483,21 +483,31 @@ var simplemaps_usmap_mapdata={
       type: "default",
       size: "default"
     },
-    "anchorage": {
-      name: "Anchorage",
-      lat: 61.2180556,
-      lng: -149.9002778,
+    "powderhorn": {
+      name: "Powderhorn Mountain Resort",
+      lat: 38.27,
+      lng: -107.09,
       color: "default",
-      type: "circle"
+      type: "image",
+      image_url: "../images/snowflake.png",
     },
     "harmans": {
-      name: "Harmon's",
+      name: "Harmon's North Fork Cottages",
       lat: 38.8,
       lng: -79.7,
       color: "default",
       type: "circle",
       url: "../pages/wvharmans.html",
-    }
+    },
+    "7springs": {
+      name: "Seven Springs Mountain Resort",
+      lat: 40.3,
+      lng: -78.5,
+      color: "default",
+      type: "image",
+      image_url: "../images/7springs_logo.png",
+      url: "../pages/ski7springs.html",
+    },
   },
   labels: {
     NH: {
