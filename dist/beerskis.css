@@ -142,10 +142,6 @@ header a {
     margin-left: 50px;
 }
 
-nav li a:hover {
-    background: var(--nav-hover-bg-color);
-}
-
 .breadcrumbs {
     font-size: 100%;
     padding: 0;
