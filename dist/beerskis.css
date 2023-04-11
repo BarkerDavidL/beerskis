@@ -161,7 +161,7 @@ main {
 footer {
     grid-area: footer;
     background: var(--footer-bg-color);
-    color: #eeeeee;
+    color: var(--heading-font-color);
 }
 footer p {
     padding: 10px 10px 10px 10px;
