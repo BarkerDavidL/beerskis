@@ -17,8 +17,9 @@
     --footer-bg-color: #bbaa55;
     --heading-font-color: #eeeeee;
     --heading-link-color: #ccddee;
-    --nav-hover-bg-color: #f5f5e0; /* beige */
+    --nav-hover-bg-color: #eedd88;
     --nav-color: #4110f1;
+    --test-bg-color: aliceblue;
 }
 
 
@@ -51,7 +52,7 @@ ul li {
 }
 
 figure {
-    background-color: aliceblue;
+    background-color: var(--test-bg-color);
 }
 
 figure img {
@@ -70,8 +71,9 @@ figure img {
 
 .two-col-grid img, object {
     max-width: 400px;
-    background-color: lightskyblue;
+    background-color: var(--test-bg-color);
 }
+
 header {
     grid-area: header;
     display: grid;
@@ -128,8 +130,8 @@ header a {
 }
 
 .sidenav a:hover {
-    color: var(--nav-hover-bg-color);
-    background-color: red;
+    color: var(--nav-color);
+    background-color: var(--nav-hover-bg-color);
 }
   
 .sidenav .closebtn {
@@ -138,10 +140,6 @@ header a {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-
-nav li a:hover {
-    background: beige;
 }
 
 .breadcrumbs {
