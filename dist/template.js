@@ -14,11 +14,22 @@ template.innerHTML = `
     <a href="./pages/flights.html">Flights</a>
   </div>
  </header>
-
-<footer>
-<p>Beerski Travel Inc. &#169;2023</p>
-</footer>
 `;
 
 document.body.appendChild(template.content);
 
+function loadNav(relDir) {
+  nav = getElementByTagName("nav")[0];
+  if (nav) {
+
+  }
+}
+
+function loadFooter() {
+  footer = document.getElementsByTagName("footer")[0];
+  if (footer) {
+    footer.innerHTML = "<p>Beerski Travel Inc. &#169;2023</p>";
+  }
+}
+
+loadFooter();
