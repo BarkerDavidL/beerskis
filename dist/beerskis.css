@@ -25,6 +25,7 @@
 
 html, body {
     margin: 0;
+    margin-top: 70px;
     padding: 0;
 }
 
@@ -177,6 +178,7 @@ header a {
     top: 0;
     left: 0;
     background-color: var(--header-bg-color);
+    opacity: 75%;
     overflow-x: hidden;
     transition: 0.1s;
     padding-top: 60px;
