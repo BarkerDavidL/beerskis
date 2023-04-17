@@ -241,14 +241,6 @@ header a {
     font-size: 36px;
     margin-left: 50px;
 }
-.breadcrumbs {
-    font-size: 100%;
-    padding: 0;
-}
-
-.breadcrumbs a {
-    padding: 0;
-}
 
 main {
     grid-area: main;
