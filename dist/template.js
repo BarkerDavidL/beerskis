@@ -18,7 +18,7 @@ template.innerHTML = `
 <meta name="description" content="Travel with skiing, snowboarding beer drinking and friends">
 <meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./beerskis.css">
+<link rel="stylesheet" href="/dist/beerskis.css">
 </head>
 
 <header>     
@@ -34,8 +34,6 @@ template.innerHTML = `
   </div>
 </header>
 `;
-
-document.body.appendChild(template.content);
 
 function loadNav(relDir) {
   nav = getElementByTagName("nav")[0];
@@ -73,4 +71,8 @@ function closeTopNav() {
   document.getElementsByClassName("topNav")[0].style.width = "0";
   //document.getElementById("content").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
+}
+
+window.onload = function(e) {
+  document.body.appendChild(template.content);
 }
