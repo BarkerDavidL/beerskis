@@ -19,21 +19,20 @@ template.innerHTML = `
 <meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./beerskis.css">
-
 </head>
+
 <header>     
     <span onclick="openTopNav()">&#9776;</span>
     <h1>Da Beerskis Time Portal</h1>
     <a href="/dist/pages/temp.html">About</a>
-   <div class="topNav">
+  <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
     <a href= "/dist/index.html">Home</a>
     <a href= "/dist/pages/lodging.html">Lodging</a>
-    <a href="/dist/pages/beers.html">Brewpubs</a>
     <a href="/dist/pages/packages.html">All-Inclusives</a>
-    <a href="/dist/pages/lightBox.html">Beerski Trips</a>
+    <a href="/dist/pages/wvCabinsPics.html">Beerski Trips</a>
   </div>
- </header>
+</header>
 `;
 
 document.body.appendChild(template.content);
@@ -51,8 +50,8 @@ function loadFooter() {
     footer.innerHTML = "<p>Beerski Travel Inc. &#169;2023</p>";
   }
 }
-
 loadFooter();
+
 function openNav() {
   document.getElementsByClassName("sidenav")[0].style.width = "250px";
   //document.getElementById("content").style.marginLeft = "250px";
