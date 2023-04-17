@@ -12,12 +12,6 @@ console.log("PathName = ", pathName);
 template.innerHTML = `
 <head>
 <title>Da Beerskis Time Portal</title>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="author" content="Beerskis Travel Inc.">
-<meta name="description" content="Travel with skiing, snowboarding beer drinking and friends">
-<meta name="keywords" content="skiing,travel,brews,beer,ski,snowboard,snowboarding">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/dist/beerskis.css">
 </head>
 
@@ -31,6 +25,7 @@ template.innerHTML = `
     <a href= "/dist/pages/lodging.html">Lodging</a>
     <a href="/dist/pages/packages.html">All-Inclusives</a>
     <a href="/dist/pages/wvCabinsPics.html">Beerski Trips</a>
+    <a href="/dist/pages/flights.html">Flights</a>
   </div>
 </header>
 `;
