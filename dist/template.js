@@ -28,6 +28,9 @@ template.innerHTML = `
     <a href="/dist/pages/flights.html">Flights</a>
   </div>
 </header>
+<footer>
+  <p>&#169; Beerskis Travel, Inc. 2023</p>
+</footer>
 `;
 
 function loadNav(relDir) {
