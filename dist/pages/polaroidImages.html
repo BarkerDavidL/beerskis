@@ -1,8 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title of the document</title>
-    <style>
+    <script>
+      function signIn(){
+        let oauth2Endpoint = "https://accounts.google.com/o/oauth2/v2/auth"
+        let form = document.createElement('form')
+        form.setAttribute('method','Get')
+        form.setAttribute('action',oauth2Endpoint)
+        let params ={
+          "client_id":"",
+          "redirect_uri":"",
+          "response_type":"token",
+          "scope":"https://www.googleapis.com/auth/userinfo.profile"  /* https://developers.google.com/oauthplayground/ */
+          "include_granted_scopes":"true",
+          
+        }
+      }
+      import axios from "axios";
+      export default {
+        name: 'HelloWorld',
+        data () {
+          return {
+            msg: ''
+          }
+        },
+        mounted() {
+          axios({method: "GET", "url": "https://api.spotify.com/v1/search?q=Muse&type=track"}).then(result => {
+            this.msg = result.data.tracks.items[0].name
+        }, error => {
+          console.error(error);
+        });
+        }
+      }
+      </script>
+     <style>
       .polaroid a {
         background: red;
         display: inline-block;
