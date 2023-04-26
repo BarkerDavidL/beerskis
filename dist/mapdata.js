@@ -22,7 +22,7 @@ var simplemaps_usmap_mapdata={
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_url: "",
-    location_size: 25,
+    location_size: 35,
     location_type: "square",
     location_border_color: "#FFFFFF",
     location_border: 2,
@@ -166,7 +166,7 @@ var simplemaps_usmap_mapdata={
     },
     WV: {
       name: "West Virginia",
-      description: "default",
+      description: "Events:<ul><li>Cabin Trip - August</li><li>Another thing</li></ul>",
       color: "default",
       hover_color: "default",
       url: "default"
