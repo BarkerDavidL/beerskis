@@ -26,6 +26,7 @@ template.innerHTML = `
     <a href="/dist/pages/packages.html">All-Inclusives</a>
     <a href="/dist/pages/wvCabinsPics.html">Beerski Trips</a>
     <a href="/dist/pages/flights.html">Flights</a>
+    <a href= "/dist/pages/tasks.html">Tasks</a>
   </div>
 </header>
 <footer>
