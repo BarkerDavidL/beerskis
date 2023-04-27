@@ -138,6 +138,16 @@ figure img {
     background-color: var(--test-bg-color);
 }
 
+.picture-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.picture-tiles figure {
+    width: 200px;
+}
+
 header {
     grid-area: header;
     display: grid;
