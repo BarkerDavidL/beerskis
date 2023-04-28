@@ -22,9 +22,9 @@ template.innerHTML = `
   <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
     <a href= "/dist/index.html">Home</a>
-    <a href= "/dist/pages/lodging.html">Lodging</a>
+    <a href= "/dist/pages/beerski_trips.html">Beerski Trips</a>
     <a href="/dist/pages/packages.html">All-Inclusives</a>
-    <a href="/dist/pages/wvCabinsPics.html">Beerski Trips</a>
+    <a href="/dist/pages/wvCabinsPics.html">WV Cabins</a>
     <a href="/dist/pages/flights.html">Flights</a>
     <a href= "/dist/pages/tasks.html">Tasks</a>
   </div>
