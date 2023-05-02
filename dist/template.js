@@ -22,10 +22,10 @@ template.innerHTML = `
   <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
     <a href= "/dist/index.html">Home</a>
-    <a href= "/dist/pages/beerski_trips.html">Beerski Trips</a>
-    <a href="/dist/pages/packages.html">All-Inclusives</a>
-    <a href="/dist/pages/wvCabinsPics.html">WV Cabins</a>
-    <a href="/dist/pages/flights.html">Flights</a>
+    <a href= "/dist/pages/beerski_trips.html">Beerski Trip Map</a>
+    <a href="/dist/pages/ski7springs.html">7 Springs Trips</a>
+    <a href="/dist/pages/wvharmans.html">WV Cabins Trips</a>
+    <a href="/dist/pages/skiheavenly.html">Western Ski Trips</a>
     <a href= "/dist/pages/tasks.html">Tasks</a>
   </div>
 </header>
