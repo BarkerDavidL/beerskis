@@ -481,7 +481,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       type: "image",
       image_url: "../images/snowflake.png",
-      url: "../pages/skiheavenly.html",
+      url: "../pages/skiwest.html",
     },
     "powderhorn": {
       name: "Powderhorn Mountain Resort",
