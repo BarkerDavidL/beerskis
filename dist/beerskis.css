@@ -251,6 +251,9 @@ header a {
     font-size: 36px;
     margin-left: 50px;
 }
+td:nth-child(even), th:nth-child(even) {
+    background-color: #D6EEEE;
+  }
 
 main {
     grid-area: main;
