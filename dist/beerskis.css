@@ -251,6 +251,7 @@ header a {
     font-size: 36px;
     margin-left: 50px;
 }
+
 td:nth-child(even), th:nth-child(even) {
     background-color: #D6EEEE;
     column-width: 40px;
@@ -259,6 +260,7 @@ td:nth-child(even), th:nth-child(even) {
     background-color: #D6EEEE;
     column-width: 100px;
   }
+ 
 main {
     grid-area: main;
     transition: margin-left .5s;
