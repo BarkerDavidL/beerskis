@@ -1,5 +1,6 @@
 function handleFiles(files) {
 	// Check for the various File API support.
+	alert(files[0].name);
 	if (window.FileReader) {
 		// FileReader are supported.
 		getAsText(files[0]);
@@ -7,6 +8,7 @@ function handleFiles(files) {
 		alert('FileReader are not supported in this browser.');
 	}
 }
+
 function getAsText(fileToRead) {
 	var reader = new FileReader();
 	// Handle errors load
