@@ -138,6 +138,11 @@ figure img {
     background-color: var(--test-bg-color);
 }
 
+.two-col-grid-with-sidebar {
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+}
+
 .picture-tiles {
     display: flex;
     flex-direction: row;
