@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../beerskis.css">
     <script src="../template.js" type="text/javascript" defer></script>
     <script src="/dist/csv2table.js" type="text/javascript" defer></script>
+
   </head>
   <body>
  
@@ -39,6 +40,68 @@
     </table>      
       <br>
       <br>
-          
+
+      <!-- New table to demostrate countable columns -->
+      <table id="res">
+        <thead>
+          <th>Col1</th>
+          <th>Amount</th>
+          <th>asdf</th>
+        </thead>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">12</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">2</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">12</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">12</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">67</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">156</td>
+          <td>wer</td>
+        </tr>
+        <tr>
+          <td>Col1</td>
+          <td class="countable">99</td>
+          <td>wer</td>
+        </tr>
+        </table>
+
+        <script>
+          var sum = 0;
+        var table = document.getElementById("res");
+        var ths = table.getElementsByTagName('th');
+        var tds = table.getElementsByClassName('countable');
+        alert(table.rows.length);
+        for(var i=0;i<tds.length;i++){
+          sum += isNaN(tds[i].innerText) ? 0 : parseInt(tds[i].innerText);
+        }
+        
+        var row = table.insertRow(table.rows.length);
+        var cell = row.insertCell(0);
+        cell.setAttribute('colspan', ths.length);
+        
+        var totalBalance  = document.createTextNode('Total Balance ' + sum);
+        cell.appendChild(totalBalance);
+
+         </script>
   </body>
 <html>

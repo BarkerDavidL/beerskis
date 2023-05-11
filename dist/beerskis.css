@@ -25,7 +25,7 @@
 
 html, body {
     margin: 0;
-    margin-top: 70px;
+    margin-top: 0px;
     padding: 0;
 }
 
@@ -264,7 +264,7 @@ td:nth-child(even), th:nth-child(even) {
 main {
     grid-area: main;
     transition: margin-left .5s;
-    padding: 100px 16px 16px 16px;
+    padding: 20px 16px 16px 16px;
 }
 
 footer {
