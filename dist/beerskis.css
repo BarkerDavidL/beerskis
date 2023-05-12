@@ -22,7 +22,6 @@
     --test-bg-color: aliceblue;
 }
 
-
 html, body {
     margin: 0;
     margin-top: 0px;
@@ -34,13 +33,12 @@ body {
     font-size: 90%;
     font-weight: normal;
     display: grid;
-    margin-top: 20px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-      "header header header header"
-      "main main main main"
-      "footer footer footer footer";
+      "header"
+      "main"
+      "footer";
 }
 
 p {
@@ -57,33 +55,39 @@ figure {
     border: 1px #cccccc solid;
     padding: 4px;
     margin: auto;
-  }
-  figcaption {
+}
+
+figcaption {
     background-color: black;
     color: white;
     font-style: italic;
     padding: 2px;
     text-align: center;
-  }
+}
+
 figure img {
     width: 100%;
 }
+
 .gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
     width: 280px;
     height: 280px;
-  }
-  .gallery:hover {
+}
+
+.gallery:hover {
     border: 1px solid #777;
     box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
-  }
-  .imageDiv {
+}
+
+.imageDiv {
     height: 230px;
     background: red;
     position:relative;
 }
+
 .imageDiv img {
   width: 100%;
   max-height: 200px;
@@ -93,6 +97,7 @@ figure img {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 .polaroid {
     width:100%;
     background-color: #cccccc;
@@ -101,26 +106,29 @@ figure img {
     float:left;
     width: 250px;
     margin: 15px;
-    }
-    /* border shadow on hover */
-    .polaroid:hover {
+}
+
+/* border shadow on hover */
+.polaroid:hover {
       box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
       border: 1px solid #777;
-    }
-    .polaroid img {
+}
+
+.polaroid img {
       border: 15px solid #ddd;
       border-radius: 20px;
       padding: 5px;
       /* Responsive Image */
       width: 100%;
       height: auto;
-    }
-    .desc {
+}
+
+.desc {
         padding: 15px;
         text-align: center;
         text-align: top;
         height: 50px;
-      }
+}
 
 /* Grid Format Section */
 .flex-row {
@@ -157,20 +165,21 @@ header {
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    background: var(--header-bg-color);
     color: var(--heading-font-color);
-    background-image: url("images/a_Sunset_Flowers.JPG");
-    background-size:cover;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
+    position: relative;
 }
 
-header::before {
-     opacity: 0.5;
-     position: absolute;
-     z-index:-1;
+header::after {
+    content: "";
+    position: absolute;
+    background-image: url("images/a_Sunset_Flowers.JPG");
+    background-size:cover;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 header span {
@@ -184,6 +193,7 @@ header a {
     padding: 30px;
     color: var(--heading-link-color);
 }
+
 /* Navigation Style Section */
 .topNav {
     height: 100%;
@@ -221,6 +231,7 @@ header a {
     font-size: 36px;
     margin-left: 50px;
 }
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -260,16 +271,18 @@ header a {
 td:nth-child(even), th:nth-child(even) {
     background-color: #D6EEEE;
     column-width: 40px;
-  }
-  td:first-child {
+}
+
+td:first-child {
     background-color: #D6EEEE;
     column-width: 100px;
-  }
+}
  
 main {
     grid-area: main;
     transition: margin-left .5s;
-    padding: 20px 16px 16px 16px;
+    margin-top: 0px;
+    padding: 0px 16px 16px 16px;
     position: relative;
 }
 
@@ -291,6 +304,7 @@ footer {
     background: var(--footer-bg-color);
     color: var(--heading-font-color);
 }
+
 footer p {
     padding: 10px 10px 10px 10px;
 }
