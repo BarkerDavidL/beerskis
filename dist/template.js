@@ -8,7 +8,6 @@ if (page="index.html") {
 else {var pathName = "";}
 console.log("PathName = ", pathName);
 
-
 template.innerHTML = `
 <head>
 <title>Da Beerskis Time Portal</title>
