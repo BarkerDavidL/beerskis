@@ -156,6 +156,12 @@ figure img {
     grid-template-columns: 3fr 3fr 1fr;
 }
 
+tbody {
+    display: block;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
 .picture-tiles {
     display: flex;
     flex-direction: row;
