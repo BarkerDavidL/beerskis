@@ -70,6 +70,7 @@ figcaption {
 
 figure img {
     width: 100%;
+    max-height: 300px;
 }
 
 .gallery {
