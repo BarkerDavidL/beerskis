@@ -1,6 +1,3 @@
-let fileurl = "/dist/data/wv.json";
-let year = "2022";
-
 function getAttendees(fileurl, year) {
     fetch(fileurl)
     .then(function(response) {
@@ -30,4 +27,6 @@ function getAttendees(fileurl, year) {
     });
 }
 
+//let fileurl = "/dist/data/wv.json";
+//let year = "2022";
 //getAttendees(fileurl, year);
