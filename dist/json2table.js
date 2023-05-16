@@ -12,6 +12,7 @@ function getAttendees(fileurl, year) {
     .then(function(attendees) {
         let attendee_table = document.querySelector("#attendee_output");
         let out = "";
+        let attendee_count = 0;
         console.log("Year: " + year);
         for (let attendee of attendees) {
             if (attendee[year] == "1") {
@@ -20,10 +21,12 @@ function getAttendees(fileurl, year) {
                     <td>${attendee.Name}</td>
                 </tr>
                 `;
+                attendee_count += 1;
             }
         }
 
         attendee_table.innerHTML = out;
+        document.getElementById('rowCount').innerHTML = attendee_count + " Attendees";
     });
 }
 
