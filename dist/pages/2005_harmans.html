@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" src="../beerskis.css">
+        <script src="../template.js" type="text/javascript"></script>
+        <script src="../json2table.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <main>
+            <h2>Harman's North Fork Cottages 2005 July 29 - 31</h2>
+            <div class="two-col-grid-with-sidebar">
+              <p>
+                TBD 
+              </p>
+              <figure>
+                <a target="_blank" href = "https://photos.app.goo.gl/jvgLorGRm9uzytH3A">
+                    <img src="/dist/images/WVA-harmanOffice.jpg"/>
+                    <figcaption>2005 West Virginia Cabins</figcaption>
+                </a>
+              </figure>
+              <table>
+                <thead>
+                  <tr>
+                    <th id="rowCount"> Attendees</th>
+                  </tr>
+                </thead>
+                <tbody id="attendee_output">
+                </tbody>
+              </table>
+              <script>
+                getAttendees("/dist/data/wv.json", "2005");
+              </script>
+            </div>
+        </main>
+    </body>
+</html>
