@@ -16,7 +16,6 @@ console.log("PathName = ", pathName + ", rootPath: " + rootPath);
 template.innerHTML = `
 <head>
 <title>Da Beerskis Time Portal</title>
-<link rel="stylesheet" href="/dist/beerskis.css">
 </head>
 
 <header>     
