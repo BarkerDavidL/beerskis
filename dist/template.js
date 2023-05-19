@@ -3,10 +3,15 @@ var path = location.pathname;
 var page = path.split("/").pop();
 console.log("Page = ", page);
 console.log("Path = ", path);
-if (page="index.html") {
-  var pathName = ""; }
-else {var pathName = "";}
-console.log("PathName = ", pathName);
+
+let pathName = "";
+let rootPath = "";
+if (page == "index.html") {
+  pathName = "/pages";
+} else {
+  rootPath = ".";
+}
+console.log("PathName = ", pathName + ", rootPath: " + rootPath);
 
 template.innerHTML = `
 <head>
@@ -20,12 +25,12 @@ template.innerHTML = `
     <a href="/dist/pages/temp.html">About</a>
   <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
-    <a href= "../dist/index.html">Home</a>
-    <a href= "../dist/pages/beerski_trips.html">Beerski Trip Map</a>
-    <a href="../dist/pages/ski7springs.html">7 Springs Trips</a>
-    <a href="../dist/pages/wvharmans.html">WV Cabins Trips</a>
-    <a href="../dist/pages/skiwest.html">Western Ski Trips</a>
-    <a href= "../dist/pages/tasks.html">Tasks</a>
+    <a href= ".${rootPath}/index.html">Home</a>
+    <a href= ".${pathName}/beerski_trips.html">Beerski Trip Map</a>
+    <a href=".${pathName}/ski7springs.html">7 Springs Trips</a>
+    <a href=".${pathName}/wvharmans.html">WV Cabins Trips</a>
+    <a href=".${pathName}/skiwest.html">Western Ski Trips</a>
+    <a href= ".${pathName}/tasks.html">Tasks</a>
   </div>
 </header>
 <footer>
