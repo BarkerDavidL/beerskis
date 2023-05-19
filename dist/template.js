@@ -20,12 +20,12 @@ template.innerHTML = `
     <a href="/dist/pages/temp.html">About</a>
   <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
-    <a href= "/beerskis/dist/index.html">Home</a>
-    <a href= "/beerskis/dist/pages/beerski_trips.html">Beerski Trip Map</a>
-    <a href="/beerskis/dist/pages/ski7springs.html">7 Springs Trips</a>
+    <a href= "../dist/index.html">Home</a>
+    <a href= "../dist/pages/beerski_trips.html">Beerski Trip Map</a>
+    <a href="../dist/pages/ski7springs.html">7 Springs Trips</a>
     <a href="../dist/pages/wvharmans.html">WV Cabins Trips</a>
-    <a href="../pages/skiwest.html">Western Ski Trips</a>
-    <a href= "../tasks.html">Tasks</a>
+    <a href="../dist/pages/skiwest.html">Western Ski Trips</a>
+    <a href= "../dist/pages/tasks.html">Tasks</a>
   </div>
 </header>
 <footer>
