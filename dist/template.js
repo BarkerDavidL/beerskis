@@ -21,7 +21,7 @@ template.innerHTML = `
 <header>     
     <span onclick="openTopNav()">&#9776;</span>
     <h1>Da Beerskis Time Portal</h1>
-    <a href="/dist/pages/temp.html">About</a>
+    <a href="./temp.html">About</a>
   <div class="topNav">
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
     <a href= ".${rootPath}/index.html">Home</a>
