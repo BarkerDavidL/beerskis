@@ -23,7 +23,7 @@ template.innerHTML = `
     <a href= "/beerskis/dist/index.html">Home</a>
     <a href= "/beerskis/dist/pages/beerski_trips.html">Beerski Trip Map</a>
     <a href="/beerskis/dist/pages/ski7springs.html">7 Springs Trips</a>
-    <a href="/beerskis/pages/wvharmans.html">WV Cabins Trips</a>
+    <a href="/beerskis/dist/pages/wvharmans.html">WV Cabins Trips</a>
     <a href="/beerskis/dist/pages/skiwest.html">Western Ski Trips</a>
     <a href= "/beerskis/dist/pages/tasks.html">Tasks</a>
   </div>
