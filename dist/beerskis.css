@@ -329,6 +329,12 @@ footer p {
     padding: 10px 10px 10px 10px;
 }
 
+.checkmark {
+    color: green;
+    font-weight: bold;
+    font-size: larger;
+}
+
 @media screen and (max-height: 450px) {
     .topNav {padding-top: 15px;}
     .topNav a {font-size: 18px;}

@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-let filename = "data/wv.csv";
-let json_filename = "data/wv.json";
+let filename = "data/western.csv";
+let json_filename = "data/western.json";
 
 function csv2json(csv, delim=",") {
     let headers = csv.slice(0, csv.indexOf('\n')).trim().split(delim);
