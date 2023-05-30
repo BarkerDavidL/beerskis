@@ -180,13 +180,10 @@ th {
 }
 
 .picture-tiles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.picture-tiles figure {
-    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 1rem;
+    justify-content: space-between;
 }
 
 header {
