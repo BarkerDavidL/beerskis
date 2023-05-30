@@ -57,6 +57,7 @@ figure {
     margin: auto;
     margin-top:0;
     background-color: #0a0a23;
+    min-width: 200px;
 }
 
 figcaption {
