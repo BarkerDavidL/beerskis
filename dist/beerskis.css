@@ -57,6 +57,7 @@ figure {
     margin: auto;
     margin-top:0;
     background-color: #0a0a23;
+    min-width: 200px;
 }
 
 figcaption {
@@ -180,13 +181,10 @@ th {
 }
 
 .picture-tiles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.picture-tiles figure {
-    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 1rem;
+    justify-content: space-between;
 }
 
 header {
