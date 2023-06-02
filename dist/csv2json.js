@@ -1,8 +1,17 @@
+/**
+ * csv2json - reads a CSV file and write out an equivalent JSON file
+ */
 const fs = require('fs');
 
 let filename = "data/western.csv";
 let json_filename = "data/western.json";
 
+/**
+ * 
+ * @param {string} csv - a string containing the entire csv input
+ * @param {string} delim - a string that is used to delimit items in a csv file, default ','
+ * @returns 
+ */
 function csv2json(csv, delim=",") {
     let headers = csv.slice(0, csv.indexOf('\n')).trim().split(delim);
     let restoffile = csv.slice(csv.indexOf('\n') + 1);
@@ -18,6 +27,11 @@ function csv2json(csv, delim=",") {
     return JSON.stringify(json);
 }
 
+/**
+ * 
+ * @param {string} json_filename - the filename of the JSON output file
+ * @param {string} json_text - the string containing all of the JSON data
+ */
 function write_json_file(json_filename, json_text) {
     console.log("writing json_file: " + json_filename);
     fs.writeFile(
