@@ -41,6 +41,7 @@ function getAttendees(fileurl, year) {
     });
 }
 
-//let fileurl = "/dist/data/wv.json";
-//let year = "2022";
-//getAttendees(fileurl, year);
+let fileurl = document.currentScript.getAttribute('fileurl');
+let year = document.currentScript.getAttribute('year');
+
+getAttendees(fileurl, year);

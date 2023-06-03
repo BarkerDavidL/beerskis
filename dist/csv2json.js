@@ -3,8 +3,10 @@
  */
 const fs = require('fs');
 
-let filename = "data/western.csv";
-let json_filename = "data/western.json";
+//let filename = "data/western.csv";
+//let json_filename = "data/western.json";
+let filename = "data/7springs.csv";
+let json_filename = "data/7springs.json";
 
 /**
  * 
