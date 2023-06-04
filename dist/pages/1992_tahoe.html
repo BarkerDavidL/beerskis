@@ -3,7 +3,7 @@
     <head>
         <link href="../beerskis.css" rel="stylesheet" type="text/css" />
         <script src="../template.js" type="text/javascript"></script>
-        <script src="../json2table.js" type="text/javascript"></script>
+        <script src="../json2table.js" type="text/javascript" fileurl="../data/western.json" year="1992"></script>
     </head>
     <body>
         <main>
@@ -15,23 +15,19 @@
                     Heavenly, Kirkwood and Squaw Valley (now Pallisades North.) 
                 </p>
                 <figure>
-                  <a target="_blank" href = "https://photos.app.goo.gl/8DRgTr7SXPMoxqk3A">
-                      <img src="../images/1992_tahoe_hot_tub.jpg"/>
-                      <figcaption>Hanging outside in 20&deg; in swimsuits</figcaption>
-                  </a>
+                    <a target="_blank" href = "https://photos.app.goo.gl/8DRgTr7SXPMoxqk3A">
+                        <img src="../images/1992_tahoe_hot_tub.jpg"/>
+                        <figcaption>Hanging outside in 20&deg; in swimsuits</figcaption>
+                    </a>
                 </figure>
                 <table>
-                  <thead>
-                    <tr>
-                      <th id="rowCount"> Attendees</th>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th id="rowCount"> Attendees</th>
+                        </tr>
                   </thead>
-                  <tbody id="attendee_output">
-                  </tbody>
+                  <tbody id="attendee_output"/>
                 </table>
-                <script>
-                  getAttendees("../data/western.json", "1992");
-                </script>
               </div>
           </main>
     </body>
