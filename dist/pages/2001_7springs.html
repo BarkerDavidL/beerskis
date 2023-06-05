@@ -3,15 +3,14 @@
     <head>
         <link href="../beerskis.css" rel="stylesheet" type="text/css" />
         <script src="../template.js" type="text/javascript"></script>
+        <script src="../json2table.js" type="text/javascript" fileurl="../data/7springs.json" year="2001"></script>
     </head>
     <body> 
         <main> 
-            
             <h2>Beerskis Seven Springs February 1 - 4 2001</h2>
-
             <div class="two-col-grid-with-sidebar">
                 <p>
-                  The last Seven Springs Ski Trip 
+                    The tenth Beerskis 7-Springs Ski Trip 
                 </p>
                 <figure>
                     <a target="_blank" href = "https://photos.app.goo.gl/gRW9wDwhz9vaPEpg9">
@@ -19,75 +18,15 @@
                         <figcaption>2001 Feb 1 - 4</figcaption>
                     </a>
                 </figure>
-                <table id="MyTable">
-                    <tr>
-                        <th id="rowCount"> Attendees</th>
-                    <tr>
-                     <tbody>
-                            <td>Tim McCaffery</td>
-                        </tr>
+                <table>
+                    <thead>
                         <tr>
-                            <td>Lisa Barker</td>
+                            <th id="rowCount"> Attendees</th>
                         </tr>
-                        <tr>
-                            <td>Dave Barker</td>
-                        </tr>
-                        <tr>
-                            <td>Hung Lam</td>
-                        </tr>
-                        <tr>
-                            <td>Julie Hendricks</td>
-                        </tr>
-                        <tr>
-                            <td>Shari Roseman</td>
-                        </tr>
-                        <tr>
-                            <td>Lori Collins</td>
-                        </tr>
-                        <tr>
-                            <td>Mike Biver</td>
-                        </tr>
-                        <tr>
-                            <td>Susan Lexer</td>
-                        </tr>
-                        <tr>
-                            <td>Karl Hoeffel</td>
-                        </tr>
-                        <tr>
-                            <td>Ed Mason</td>
-                        </tr>
-                        <tr>
-                            <td>Ed Frost</td>
-                        </tr>
-                        <tr>
-                            <td>Heather Harter</td>
-                        </tr>
-                        <tr>
-                            <td>Rob Harter</td>
-                        </tr>
-                        <tr>
-                            <td>Michele Bolos</td>
-                        </tr>
-                        <tr>
-                            <td>Bryan Watson</td>
-                        </tr>
-                        <tr>
-                            <td>Vicki Frost</td>
-                        </tr>
-                        <tr>
-                            <td>An Hoang</td>
-                        </tr>
-                        <tr>
-                            <td>Dayne Harum</td>
-                        </tr>
-                        <tr>
-                            <td>Jennifer Redding</td>
-                        </tr>
-                      </tbody>
-                    </table>
-        
+                    </thead>
+                    <tbody id="attendee_output"/>
+                </table>
             </div>
         </main>
-        <script src="../rowCount.js" type="text/javascript"></script>
     </body>
 </html>

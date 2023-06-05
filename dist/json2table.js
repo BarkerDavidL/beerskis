@@ -1,3 +1,17 @@
+/**
+ * 
+ * getAttendees - reads a JSON file and looks for a column matching the 'year'
+ *                then returns a table entry for each column containing a '1'
+ * 
+ *                This function is called from each trip page to display the
+ *                attendees for that specific trip
+ * 
+ *                The JSON data is generated from a csv-to-JSON converter
+ *                script called csv2json.js
+ * 
+ * @param {string} fileurl - the URL of the JSON file containing attendee data
+ * @param {string} year - the column heading of the attendee data to display
+ */
 function getAttendees(fileurl, year) {
     fetch(fileurl)
     .then(function(response) {
@@ -27,6 +41,7 @@ function getAttendees(fileurl, year) {
     });
 }
 
-//let fileurl = "/dist/data/wv.json";
-//let year = "2022";
-//getAttendees(fileurl, year);
+let fileurl = document.currentScript.getAttribute('fileurl');
+let year = document.currentScript.getAttribute('year');
+
+getAttendees(fileurl, year);

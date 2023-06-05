@@ -3,35 +3,31 @@
     <head>
         <link href="../beerskis.css" rel="stylesheet" type="text/css" />
         <script src="../template.js" type="text/javascript"></script>
-        <script src="../json2table.js" type="text/javascript"></script>
+        <script src="../json2table.js" type="text/javascript" fileurl="../data/western.json" year="1995"></script>
     </head>
     <body>
         <main>
             <h2>Beerskis Lake Tahoe March 1995</h2>
             <div class="two-col-grid-with-sidebar">
-              <p>
-                Split into 2 large townhouses on the south shore of Lake Tahoe,
-                the Beerskis spent a week in Stateline, California skiing at
-                Heavenly, Kirkwood and Squaw Valley (now Pallisades North.) 
-              </p>
-              <figure>
-                <a target="_blank" href="https://photos.app.goo.gl/q2r2QujCKtGPR4EN9">
-                    <img src="../images/1995_tahoe_paddleboat_lisa_tim.jpg"/>
-                    <figcaption>Lisa and Tim on the Tahoe Queen Paddleboat</figcaption>
-                </a>
-              </figure>
-              <table>
-                <thead>
-                  <tr>
-                    <th id="rowCount"> Attendees</th>
-                  </tr>
-                </thead>
-                <tbody id="attendee_output">
-                </tbody>
-              </table>
-              <script>
-                getAttendees("../data/western.json", "1995");
-              </script>
+                <p>
+                    Wed rented a large house with in indoor hot tub and pool table on the Nevada
+                    side of Stateline, the town on the border of California and Nevada. We packed
+                    it full of people and had a great week skiing the Lake Tahoe area. 
+                </p>
+                <figure>
+                    <a target="_blank" href="https://photos.app.goo.gl/q2r2QujCKtGPR4EN9">
+                        <img src="../images/1995_tahoe_paddleboat_lisa_tim.jpg"/>
+                        <figcaption>Lisa and Tim on the Tahoe Queen Paddleboat</figcaption>
+                    </a>
+                </figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="rowCount"> Attendees</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendee_output"/>
+                </table>
           </div>
         </main>
     </body>
