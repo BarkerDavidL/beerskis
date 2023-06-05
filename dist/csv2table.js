@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param {*} files 
+ */
+// comment
+
 function handleFiles(files) {
 	// Check for the various File API support.
 	alert(files[0].name);
