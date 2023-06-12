@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 360px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -180px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+<body style="text-align:center">
+
+<h2>Popup</h2><br>
+
+
+<div class="popup" onclick="myFunction()">Cabins Have
+  <span class="popuptext" id="myPopup">
+    <ol>Cabins Have:
+        <li>- bed linens</li>
+        <li>- towels for indoor use</li>
+        <li>-WiFi</li> 
+        <li>-Fully appointed kitchens</li> 
+        <li>-washer/dryers</li>
+        <li>-hot tubs</li>
+        <li>- dish washing soap</li>
+        <li>- laundry soap</li>
+        <li>- paper towels</li>
+        <li>- sponges</li>
+        <li>- trash bags</li>
+        <li>- hand soap</li>
+        </ol>
+  </span>
+</div><br>
+<div class="popup" onclick="myFunction1()">Check-out
+    <span class="popuptext" id="myPopup1">
+        Check-out:
+        Put all trash in the bins outside
+        Put all linens in washing machine/bathtub
+        Leave key on table
+        Take all food/drinks
+        Check for lost items
+        Turn hot tubs down to 90
+        The cleaning crew arrives at 11am, so we can’t be late checking out
+    </span>
+  </div><br>
+  <div class="popup" onclick="myFunction2()">What to Bring
+    <span class="popuptext" id="myPopup2">
+        I recommend that you bring:
+        - BYOB - or whatever you like to drink
+        - Towels for outside
+        - Flashlight
+        - River shoes and swimsuits
+        - extra snacks
+        - Sunscreen and bug spray
+        - Any musical instrument you can use by the campfire
+        - camp chair
+    </span>
+ </div>
+    <br><div class="popup" onclick="myFunction3()">Directions
+        <span class="popuptext" id="myPopup3">
+            The cabins are a couple of miles past Smoke Hole Caverns on Rt. 55 on the left hand side.  The right turn for Dolly Sods (marked with a sign) is 200 yards before the left turn into the cabins.
+
+        </span>
+  </div>
+
+</span>
+</div>
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+function myFunction1() {
+  var popup = document.getElementById("myPopup1");
+  popup.classList.toggle("show");
+}
+function myFunction2() {
+  var popup = document.getElementById("myPopup2");
+  popup.classList.toggle("show");
+}
+function myFunction3() {
+  var popup = document.getElementById("myPopup3");
+  popup.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
