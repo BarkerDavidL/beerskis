@@ -2,7 +2,9 @@
 <html lang="en">
     <head>
         <link href="../beerskis.css" rel="stylesheet" type="text/css" />
+        <link href="../popup.css" rel="stylesheet" type="text/css" />
         <script src="../template.js"></script>
+        <script src="../popup.js" type="text/javascript"></script>
     </head>
     <body class="body-container">
 
@@ -10,29 +12,99 @@
             <div id="content">
                 <h1>Harman's North Fork Cottages in Cabins West Virginia</h1>
                 <div class="two-col-grid">
-                <p>Located near the source of the Potomac River in
-                   West Virginia, Harman's North Fork Cottages provides
-                   the ultimate in rustic <a href="https://en.wikipedia.org/wiki/Glamping"
-                   target="_blank">Glamping</a>. Modern
-                   log homes with up-to-date amenities, gas fireplaces, hot
-                   tubs on outside decks, floor-to-ceiling windows, fully-appointed
-                   kitchens and WiFi welcome you to the wild and wonderful nature
-                   of West Virginia's river valleys running through the rock
-                   formations and mountain ridges. Nearby include
-                   <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7053">Spruce Knob</a>,
-                   <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=12366">Dolly Sods</a>,
-                   <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7051">Seneca Rocks</a>,
-                   <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7000">Big Bend</a>
-                   and many other places to enjoy nature.
-                </p>
-                <figure class="figure">
-                    <img src="../images/WVA-harmanOffice.jpg"
-                         alt="Harman's North Fork Cottage's Main Office"
-                         />
-                    <figcaption>Harman's North Fork Cottages Main Office</figcaption>
-                </figure>
+                    <div>
+                        <p>
+                            Located near the source of the Potomac River in
+                            West Virginia, Harman's North Fork Cottages provides
+                            the ultimate in rustic <a href="https://en.wikipedia.org/wiki/Glamping"
+                            target="_blank">Glamping</a>. Modern
+                            log homes with up-to-date amenities, gas fireplaces, hot
+                            tubs on outside decks, floor-to-ceiling windows, fully-appointed
+                            kitchens and WiFi welcome you to the wild and wonderful nature
+                            of West Virginia's river valleys running through the rock
+                            formations and mountain ridges. Nearby include
+                            <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7053">Spruce Knob</a>,
+                            <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=12366">Dolly Sods</a>,
+                            <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7051">Seneca Rocks</a>,
+                            <a target="_blank" href="https://www.fs.usda.gov/recarea/mnf/recarea/?recid=7000">Big Bend</a>
+                            and many other places to enjoy nature.
+                        </p>
+
+                        <div class="popup" onclick="togglePopup('cabinsHave')">
+                            <h3>Cabins Have</h3>
+                            <div class="popuptext" id="cabinsHave">
+                                <ol>
+                                    <li>bed linens</li>
+                                    <li>towels for indoor use</li>
+                                    <li>WiFi</li> 
+                                    <li>Fully appointed kitchens</li> 
+                                    <li>washer/dryers</li>
+                                    <li>hot tubs</li>
+                                    <li>dish washing soap</li>
+                                    <li>laundry soap</li>
+                                    <li>paper towels</li>
+                                    <li>sponges</li>
+                                    <li>trash bags</li>
+                                    <li>hand soap</li>
+                                </ol>
+                            </div>
+                        </div>
+                    
+                        <div class="popup" onclick="togglePopup('checkout')">
+                            <h3>Check-out</h3>
+                            <div class="popuptext" id="checkout">
+                                <ol>
+                                    <li>Put all trash in the bins outside</li>
+                                    <li>Put all linens in washing machine/bathtub</li>
+                                    <li>Leave key on table</li>
+                                    <li>Take all food/drinks</li>
+                                    <li>Check for lost items</li>
+                                    <li>Turn hot tubs down to 90</li>
+                                    <li>Checkout is at 11am prompt</li>
+                                </ol>
+                            </div>
+                        </div>
+                    
+                        <div class="popup" onclick="togglePopup('bring')">
+                            <h3>What to Bring</h3>
+                            <div class="popuptext" id="bring">
+                                <ol>
+                                    <li>BYOB - or whatever you like to drink</li>
+                                    <li>Towels for outside</li>
+                                    <li>Flashlight</li>
+                                    <li>River shoes and swimsuits</li>
+                                    <li>extra snacks</li>
+                                    <li>Sunscreen and bug spray</li>
+                                    <li>Any musical instrument</li>
+                                    <li>camp chair</li>
+                                </ol>
+                            </div>
+                        </div>
+                    
+                        <div class="popup" onclick="togglePopup('directions')">
+                            <h3>Directions</h3>
+                            <div class="popuptext" id="directions">
+                                <p>
+                                    The cabins are a couple of miles past Smoke Hole Caverns on Rt.
+                                    55 on the left hand side.  The right turn for Dolly Sods (marked with a sign)
+                                    is 200 yards before the left turn into the cabins.
+                                </p>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <figure class="figure">
+                        <img src="../images/WVA-harmanOffice.jpg"
+                            alt="Harman's North Fork Cottage's Main Office"
+                            />
+                        <figcaption>Harman's North Fork Cottages Main Office</figcaption>
+                    </figure>
+
                 </div>
-                <h2>Previous Trips to Harman's North Fork Cottages</h2>
+
+                <h1>Previous Trips to Harman's North Fork Cottages</h1>
+
                 <div class="picture-tiles">  
                     <figure>
                         <a href="./2022_harmans.html">
