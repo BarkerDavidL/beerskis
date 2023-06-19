@@ -17,8 +17,8 @@
     position: absolute;
     z-index: 1;
     top: 2em;
-    left: 50%;
-    margin-left: -180px;
+    left: 10%;
+    margin-left: 0px;
   }
   
   /* Popup arrow */
