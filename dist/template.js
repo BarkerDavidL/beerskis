@@ -26,7 +26,6 @@ template.innerHTML = `
     <span class="closebtn" onclick="closeTopNav()">&times;</span>
     <a href= ".${rootPath}/index.html">Home</a>
     <a href= ".${pathName}/beerski_trips.html">Beerski Trip Map</a>
-    <a href= ".${pathName}/events.html">Events By Date</a>
     <a href=".${pathName}/ski7springs.html">7 Springs Trips</a>
     <a href=".${pathName}/wvharmans.html">WV Cabins Trips</a>
     <a href=".${pathName}/skiwest.html">Western Ski Trips</a>
@@ -53,27 +52,12 @@ function loadFooter() {
 }
 loadFooter();
 
-function openNav() {
-  document.getElementsByClassName("sidenav")[0].style.width = "250px";
-  //document.getElementById("content").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-  document.getElementsByClassName("sidenav")[0].style.width = "0";
-  //document.getElementById("content").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-}
 function openTopNav() {
   document.getElementsByClassName("topNav")[0].style.width = "250px";
-  //document.getElementById("content").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeTopNav() {
   document.getElementsByClassName("topNav")[0].style.width = "0";
-  //document.getElementById("content").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
 }
 
 window.onload = function(e) {
