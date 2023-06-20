@@ -332,26 +332,3 @@ footer p {
     font-weight: bold;
     font-size: larger;
 }
-
-@media screen and (max-height: 450px) {
-    .topNav {padding-top: 15px;}
-    .topNav a {font-size: 18px;}
-}
-
-@media only screen and (max-width: 600px) {
-    .menu_title {
-        display: none;
-    }
-    
-    .menu_icon {
-        display: inline;
-        width: 24px;
-    }
-    div#content {
-        margin-left: 200px;
-    }
-    
-    div#content h1 {
-        padding: 0px 20px;
-    }
-}
