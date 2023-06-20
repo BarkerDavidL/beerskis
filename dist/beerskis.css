@@ -73,73 +73,6 @@ figure img {
     max-height: 300px;
 }
 
-.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 280px;
-    height: 280px;
-}
-
-.gallery:hover {
-    border: 1px solid #777;
-    box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
-}
-
-.imageDiv {
-    height: 230px;
-    background: red;
-    position:relative;
-}
-
-.imageDiv img {
-  width: 100%;
-  max-height: 200px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.polaroid {
-    width:100%;
-    background-color: #cccccc;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(187, 80, 80, 0.19);
-    margin-bottom: 25px;   
-    float:left;
-    width: 250px;
-    margin: 15px;
-}
-
-/* border shadow on hover */
-.polaroid:hover {
-      box-shadow: 0 0 22px 1px rgba(0, 140, 186, 0.2);
-      border: 1px solid #777;
-}
-
-.polaroid img {
-      border: 15px solid #ddd;
-      border-radius: 20px;
-      padding: 5px;
-      /* Responsive Image */
-      width: 100%;
-      height: auto;
-}
-
-.desc {
-        padding: 15px;
-        text-align: center;
-        text-align: top;
-        height: 50px;
-}
-
-/* Grid Format Section */
-.flex-row {
-    display: flex;
-    flex-direction: row;
-}
-
 .two-col-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -253,42 +186,6 @@ header a {
 }
   
 .topNav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: var(--header-bg-color);
-    overflow-x: hidden;
-    transition: 0.1s;
-    padding-top: 60px;
-}
-  
-.sidenav a, .sidenav span {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: var(--nav-color);
-    display: block;
-    transition: 0.1s;
-    
-}
-
-.sidenav a:hover {
-    color: var(--nav-color);
-    background-color: var(--nav-hover-bg-color);
-}
-  
-.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
