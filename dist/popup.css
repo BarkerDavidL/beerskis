@@ -37,6 +37,7 @@
   .popup .show {
     visibility: visible;
     animation: fadeIn 1s;
+    resize:horizontal;
   }
   
   /* Add animation (fade in the popup) */
