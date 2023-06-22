@@ -3,7 +3,7 @@
     <head>
         <link href="../beerskis.css" rel="stylesheet" type="text/css" />
         <script src="../template.js" type="text/javascript" defer></script>
-        <script src="../json2table.js" type="text/javascript" fileurl="../data/wv.json" year="Name"></script>
+        <script src="../eventsbyperson.js" type="text/javascript" fileurl="../data/wv.json"></script>
     </head>
     <body class="body-container">
 
@@ -11,16 +11,17 @@
             <div id="content">
                 <h1>Beerskis Trips</h1>
                 <div class="two-col-grid">
-                    <p>Find who went on which trips</p>
                     <div>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th id="rowCount"> Attendees</th>
-                                </tr>
-                            </thead>
-                            <tbody id="attendee_output"/>
-                        </table>        
+                        <p>Find who went on which trips</p>
+                        <form action="" id="select_person">
+                            <label for="person">Select Person:</label>
+                            <select name="person" id="person"
+                                    onchange="listPerson(this.options[this.selectedIndex].value)">
+                            </select>
+                        </form>
+                    </div>
+                    <div>
+                        <p id="attendee_output"></p>
                     </div>
                 </div>
             </div>
