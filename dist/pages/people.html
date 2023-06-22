@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="../beerskis.css" rel="stylesheet" type="text/css" />
+        <script src="../template.js" type="text/javascript" defer></script>
+        <script src="../json2table.js" type="text/javascript" fileurl="../data/wv.json" year="Name"></script>
+    </head>
+    <body class="body-container">
+
+        <main>
+            <div id="content">
+                <h1>Beerskis Trips</h1>
+                <div class="two-col-grid">
+                    <p>Find who went on which trips</p>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id="rowCount"> Attendees</th>
+                                </tr>
+                            </thead>
+                            <tbody id="attendee_output"/>
+                        </table>        
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>

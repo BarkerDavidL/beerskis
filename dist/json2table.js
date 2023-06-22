@@ -26,7 +26,7 @@ function getAttendees(fileurl, year) {
         let attendee_count = 0;
         console.log("Year: " + year);
         for (let attendee of attendees) {
-            if (attendee[year] == "1") {
+            if (attendee[year] != "") {
                 out += `
                 <tr>
                     <td>${attendee.Name}</td>
