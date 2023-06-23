@@ -29,7 +29,7 @@ function listNames(fileurl) {
         let out = "";
         console.log("Starting name list");
         for (let attendee of attendees) {
-            if (!["", "Name"].includes(attendee.Name)) {
+            if (!["", "Total"].includes(attendee.Name)) {
                 console.log(attendee.Name);
                 out += `
                     <option value="${attendee.Name}">${attendee.Name}</option>
@@ -53,7 +53,7 @@ function listPerson(person) {
                     if (!["", "Name"].includes(col)) {
                         if ("" != attendee[col]) {
                             trip_info += `
-                                <li>${col}</li>
+                                <li><a target="_blank" href="./${col}_harmans.html">West Virginia Cabins ${col}</a></li>
                             `;
                             num_events += 1;
                         }
