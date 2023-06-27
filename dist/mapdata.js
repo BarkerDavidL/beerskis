@@ -513,7 +513,7 @@ var simplemaps_usmap_mapdata={
       image_url: "../images/snowflake.png",
       url: "../pages/skipowderhorn.html",
     },
-    "harmans": {
+    "wvcabins": {
       name: "Harmon's North Fork Cottages",
       description: "Luxury accomodations at the source of the Potomac River in West Virginia",
       lat: 38.8,
@@ -521,7 +521,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       type: "image",
       image_url: "../images/cabin.png",
-      url: "../pages/wvharmans.html",
+      url: "../pages/wvcabins.html",
     },
     "7springs": {
       name: "Seven Springs Mountain Resort",

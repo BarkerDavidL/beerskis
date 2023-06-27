@@ -53,7 +53,7 @@ function listPerson(person) {
                     if (!["", "Name"].includes(col)) {
                         if ("" != attendee[col]) {
                             trip_info += `
-                                <li><a target="_blank" href="./${col}_harmans.html">West Virginia Cabins ${col}</a></li>
+                                <li><a target="_blank" href="./${col}.html"> ${col}</a></li>
                             `;
                             num_events += 1;
                         }

@@ -38,7 +38,7 @@ function csv2json(csv, delim=",") {
         return headers.reduce(
             (obj, title, index) => {
                 //console.log("title: " + title + ", index: " + index + ", obj: " + obj[title]);
-                let key = "" == locations[index] ? title : locations[index] + " " + title;
+                let key = "" == locations[index] ? title : title + "_" + locations[index];
                 console.log("key: " + key);
                 return ((obj[key] = values[index]), obj);
             },

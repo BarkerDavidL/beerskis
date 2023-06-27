@@ -24,8 +24,8 @@ function getAttendees(fileurl, trip, year) {
         let attendee_table = document.querySelector("#attendee_output");
         let out = "";
         let attendee_count = 0;
-        console.log("Trip: " + trip + ", Year: " + year);
-        let trip_date = trip + " " + year;
+        console.log(year + "_" + trip);
+        let trip_date = year + "_" + trip;
         for (let attendee of attendees) {
             console.log("attendee");
             console.log(JSON.stringify(attendee, null, 4));
