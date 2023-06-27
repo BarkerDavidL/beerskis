@@ -25,15 +25,28 @@ console.log(json_filename);
 function csv2json(csv, delim=",") {
     let headers = csv.slice(0, csv.indexOf('\n')).trim().split(delim);
     let restoffile = csv.slice(csv.indexOf('\n') + 1);
+    let locations = restoffile.slice(0, restoffile.indexOf('\n')).trim().split(delim);
 
     let rows = restoffile.split('\n');
     let json = rows.map(row => {
         let values=row.trim().split(delim);
+        console.log(values);
+        console.log("headers");
+        console.log(headers);
+        console.log("Locations");
+        console.log(locations);
         return headers.reduce(
-            (obj, title, index) => ((obj[title] = values[index]), obj),
+            (obj, title, index) => {
+                //console.log("title: " + title + ", index: " + index + ", obj: " + obj[title]);
+                let key = "" == locations[index] ? title : locations[index] + " " + title;
+                console.log("key: " + key);
+                return ((obj[key] = values[index]), obj);
+            },
             {}
         );
     });
+    console.log("MAP RESULT");
+    //console.log(json);
     return JSON.stringify(json);
 }
 
