@@ -12,7 +12,7 @@
  * @param {string} fileurl - the URL of the JSON file containing attendee data
  * @param {string} year - the column heading of the attendee data to display
  */
-function getAttendees(fileurl, year) {
+function getAttendees(fileurl, trip, year) {
     fetch(fileurl)
     .then(function(response) {
         if (!response.ok) {
@@ -24,9 +24,12 @@ function getAttendees(fileurl, year) {
         let attendee_table = document.querySelector("#attendee_output");
         let out = "";
         let attendee_count = 0;
-        console.log("Year: " + year);
+        console.log(year + "_" + trip);
+        let trip_date = year + "_" + trip;
         for (let attendee of attendees) {
-            if (attendee[year] != "") {
+            console.log("attendee");
+            console.log(JSON.stringify(attendee, null, 4));
+            if (attendee[trip_date] == "1") {
                 out += `
                 <tr>
                     <td>${attendee.Name}</td>
@@ -42,6 +45,7 @@ function getAttendees(fileurl, year) {
 }
 
 let fileurl = document.currentScript.getAttribute('fileurl');
+let trip = document.currentScript.getAttribute('trip');
 let year = document.currentScript.getAttribute('year');
 
-getAttendees(fileurl, year);
+getAttendees(fileurl, trip, year);

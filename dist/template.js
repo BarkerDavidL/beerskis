@@ -29,7 +29,7 @@ template.innerHTML = `
     <a href= ".${pathName}/events.html">Events By Date</a>
     <a href= ".${pathName}/people.html">Events By Person</a>
     <a href=".${pathName}/ski7springs.html">7 Springs Trips</a>
-    <a href=".${pathName}/wvharmans.html">WV Cabins Trips</a>
+    <a href=".${pathName}/wvcabins.html">WV Cabins Trips</a>
     <a href=".${pathName}/skiwest.html">Western Ski Trips</a>
     <a href= ".${pathName}/tasks.html">Tasks</a>
   </div>
