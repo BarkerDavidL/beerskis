@@ -23,8 +23,8 @@ function listNames(fileurl) {
         }
         return response.json();
     })
-    .then(function(unsorted) {
-        return unsorted.sort((a, b) => {
+    .then(function(unsorted_attendees) {
+        return unsorted_attendees.sort((a, b) => {
             return a.Name < b.Name ? -1 : (a.Name == b.Name ? 0 : 1);
         });
     })
@@ -35,7 +35,7 @@ function listNames(fileurl) {
         for (let attendee of attendees) {
             if (!["", "Total"].includes(attendee.Name)) {
                 out += `
-                    <option value="${attendee.Name}">${attendee.Name}</option>
+                    <option value="${attendee.Name}">(${attendee[""]}) ${attendee.Name}</option>
                 `;
             }
         }
@@ -47,7 +47,6 @@ function listNames(fileurl) {
 function listPerson(person) {
         let attendee_table = document.querySelector("#attendee_output");
         let out = "";
-        console.log("Starting attendee list");
         for (let attendee of attendee_list) {
             if (person == attendee.Name) {
                 let trip_info = "";
@@ -62,7 +61,6 @@ function listPerson(person) {
                         }
                     }
                 }
-                console.log(attendee.Name + ": " + num_events);
                 out += `
                 <div>
                     <h3>${attendee.Name}</h3>
