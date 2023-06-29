@@ -23,14 +23,17 @@ function listNames(fileurl) {
         }
         return response.json();
     })
+    .then(function(unsorted) {
+        return unsorted.sort((a, b) => {
+            return a.Name < b.Name ? -1 : (a.Name == b.Name ? 0 : 1);
+        });
+    })
     .then(function(attendees) {
         attendee_list = attendees;
         let name_list = document.querySelector("#person");
-        let out = "";
-        console.log("Starting name list");
+        let out = `<option value="" selected disabled>--Select a person--</option>`;
         for (let attendee of attendees) {
             if (!["", "Total"].includes(attendee.Name)) {
-                console.log(attendee.Name);
                 out += `
                     <option value="${attendee.Name}">${attendee.Name}</option>
                 `;
