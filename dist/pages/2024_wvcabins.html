@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../beerskis.css" rel="stylesheet" type="text/css" />
+        <link href="../popup.css" rel="stylesheet" type="text/css" />
+        <script src="../template.js" type="text/javascript"></script>
+        <script src="../json2table.js" type="text/javascript"
+                fileurl="../data/alltrips.json" trip="wvcabins" year="2023"></script>
+        <script src="../popup.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <main>
+            <h2>Harman's North Fork Cottages 2024 August 7 - 10</h2>
+            <div class="two-col-grid-with-sidebar">
+                <div>
+                    <p>
+                        Our next trip.
+                    </p>
+                    <div class="popup" onclick="togglePopup('lodging')">
+                        <h3><u>Lodging</u></h3>
+                        <div class="popuptext" id="lodging">
+                            <p>All 5 cabins will be available after 4pm Thursday.
+                            </p>
+                            <ul>
+                              <li>Cabin 1: Ryan, Kayla, Riley, Priya, Lindsey, Mack</li>
+                              <li>Cabin 2: Tim, Evan</li>
+                              <li>Cabin 3: Keith, Singi</li>
+                              <li>Cabin 7: Kendall, Jake, Ava, Noah, Emma </li>
+                              <li>Cabin 8: David, Lisa, Jean</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="popup" onclick="togglePopup('schedule')">
+                        <h3><u>Schedule</u></h3>
+                        <div class="popuptext" id="schedule">
+                            <ul>
+                                <li>
+                                    Thursday August 7
+                                    <ul>
+                                        <li>4:00 PM       Thursday arrival</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Friday August 8
+                                    <ul>
+                                        <li>6:00 - 9:00 PM  Cookout</li>
+                                        <li>9:00 PM - ?     Campfire</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Saturday August 9
+                                    <ul>
+                                        <li>9:00 - 10:00 AM Breakfast Cabin 3</li>
+                                        <li>11:00 AM - 4:00 PM Seneca or Dolly Sods</li>
+                                        <li>Lunch Pick up at Cabin 3</li>
+                                        <li>Afternoon Tubing on the only water within 10 miles</li>
+                                        <li>5:30ish Group Picture!</li>
+                                        <li>6:00 - 7:00 PM Cookout at Cabin 1</li>
+                                        <li>8:00 PM - ? Campfire at Cabin 1</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    Sunday August 10
+                                    <ul>
+                                        <li>9:00 - 10:00 AM Breakfast at cabin 8</li>
+                                        <li>11:00AM check-out</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="popup" onclick="togglePopup('meals')">
+                        <h3><u>Meals</u></h3>
+                        <div  class="popuptext" id="meals">
+                            <ul>
+                                <li>Friday Cookout: David, Singi</li>
+                                <li>Saturday Breakfast: Keith, Evan (supplied by Allison & Scott)</li>
+                                <li>Saturday Lunch: Keith, Evan, Singi (and Allison & Scott)</li>
+                                <li>Saturday Cookout: Ryan, Kayla, Riley, Priya, Lindsey, Mack</li>
+                                <li>Sunday Breakfast: David, Lisa, Jean</li>
+                                <li>Thursday evening, Friday morning/lunch you’re on your own!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="popup" onclick="togglePopup('Messages')">
+                        <h3><u>Pre-Trip Messages</u></h3>
+                        <div  class="popuptext" id="Messages">
+                            <ul>
+                                <li>Dave - It’s that time again! Our annual West Virginia Harman’s Cabins Weekend!
+                                    This year we will be welcoming a few new folks - some friends of Ryan and Kayla will be joining us. And a brand new person created by Jake and Kendall - Emma! Let’s give all our new friends a warm welcome!                                    
+                                    For our activity on Saturday this year, Ted is planning something different. We plan to stay on-property for fun and games right next to our cabins. We’ll have lunch at the newly completed pavilion (unless Harman’s rented it out without telling us) and do activities within sight of our group of cabins.
+                                    Another new thing: Harman’s now requires 3 night rentals over weekends during busy periods. So we have all of our cabins this year starting Thursday. For those who cannot make it up Thursday, please continue to come up on Friday. But if you were on the fence, come on up a day early - the cabins are ours anyway!                                    
+                                    Another advantage to coming up Thursday is that it gives you all of Friday for unstructured activities of your own. We don’t start our schedule until the Friday evening Cookout
+                                </li>                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <figure>
+                    <a target="_blank" href = "https://photos.app.goo.gl/KqxmfdAYqEL7Lmd26">
+                        <img src="../images/WVA-harmanOffice.jpg"/>
+                        <figcaption>2024 West Virginia Cabins</figcaption>
+                    </a>
+                </figure>
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="rowCount"> Attendees</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendee_output"/>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>
